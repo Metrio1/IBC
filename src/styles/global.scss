@@ -1,0 +1,29 @@
+body {
+  font-family: var(--font-family-base), sans-serif;
+}
+
+:root {
+  --baseSize: calc(16 / 1440 * 100 * 1vw);
+}
+
+@media (max-width: 768px) {
+  :root {
+    --baseSize: calc(16 / 430 * 100 * 1vw);
+  }
+}
+
+.container {
+  font-size: calc(18 / 16 * var(--baseSize));
+  width: calc(1164 / 16 * var(--baseSize));
+  margin: auto;
+}
+
+a {
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, .h1 {
+  font-size: calc(64 / 16 * var(--baseSize));
+}

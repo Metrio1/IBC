@@ -1,0 +1,28 @@
+.main-slider {
+  background-image: url('../public/images/hero/mainSlider.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: calc(100vh - var(--headerHeight));
+}
+
+.hero {
+  height: 100%;
+
+  &__body {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: calc(813 / 16 * var(--baseSize));
+    padding: 51px 71px 63px 60px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: var(--colorLight);
+  }
+
+  .actions {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
