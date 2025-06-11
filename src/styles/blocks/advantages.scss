@@ -1,9 +1,11 @@
+@use "../functions" as fn;
+
 .advantages {
   display: flex;
   align-items: center;
   gap: 32px;
 
-  @media(max-width: 768px) {
+  @media (max-width: 768px) {
     flex-direction: column;
   }
 
@@ -17,7 +19,7 @@
     flex-direction: column;
     gap: 40px;
 
-    @media(max-width: 768px) {
+    @media (max-width: 768px) {
       order: 1;
     }
   }
@@ -26,13 +28,9 @@
   &__description {
     width: 85%;
 
-    @media(max-width: 768px) {
+    @media (max-width: 768px) {
       width: 100%;
     }
-  }
-
-  &__title {
-    text-transform: uppercase;
   }
 
   &__description {
@@ -47,10 +45,10 @@
   }
 
   &__image {
-    width: calc(563 / 16 * var(--baseSize));
-    height: calc(447 / 16 * var(--baseSize));
-    margin-top: calc(61 / 16 * var(--baseSize));
-    margin-bottom: calc(76 / 16 * var(--baseSize));
+    width: fn.bs(563);
+    height: fn.bs(447);
+    margin-top: fn.bs(61);
+    margin-bottom: fn.bs(76);
   }
 
   &__square {
@@ -59,8 +57,8 @@
     &--dark {
       background-color: #001c64;
       top: 0;
-      left: calc(96 / 16 * var(--baseSize));
-      width: calc(170 / 16 * var(--baseSize));
+      left: fn.bs(96);
+      width: fn.bs(170);
       height: 100%;
       z-index: -1;
     }
@@ -70,8 +68,8 @@
       bottom: 0;
       right: 0;
       opacity: 0.6;
-      width: calc(267 / 16 * var(--baseSize));
-      height: calc(178 / 16 * var(--baseSize));
+      width: fn.bs(267);
+      height: fn.bs(178);
     }
   }
 }

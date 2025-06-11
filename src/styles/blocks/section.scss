@@ -1,3 +1,11 @@
 .section {
   padding-block: var(--section-padding-y);
+
+  @media (max-width: 768px) {
+    --section-padding-y: 64px;
+  }
+
+  &--grey {
+    background-color: var(--colorLightGray);
+  }
 }

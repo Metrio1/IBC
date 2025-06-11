@@ -1,3 +1,5 @@
+@use "./functions" as fn;
+
 body {
   font-family: var(--font-family-base), sans-serif;
 }
@@ -18,8 +20,8 @@ br + br {
 }
 
 .container {
-  font-size: calc(18 / 16 * var(--baseSize));
-  width: calc(1164 / 16 * var(--baseSize));
+  font-size: fn.bs(18);
+  width: fn.bs(1164);
   margin: auto;
 
   @media (max-width: 768px) {
@@ -34,9 +36,14 @@ a {
 }
 
 h1, .h1 {
-  font-size: calc(64 / 16 * var(--baseSize));
+  font-size: fn.bs(64);
 }
 
-h2, h2 {
-  font-size: calc(40 / 16 * var(--baseSize));
+h2, .h2 {
+  font-size: fn.bs(40);
+  text-transform: uppercase;
+}
+
+h3, .h3 {
+  font-size: fn.bs(40);
 }

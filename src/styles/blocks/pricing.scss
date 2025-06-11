@@ -1,0 +1,49 @@
+@use "../functions" as fn;
+
+.pricing {
+
+  &__legend {
+    display: flex;
+    gap: fn.bs(22);
+
+    &-item {
+      display: flex;
+      gap: fn.bs(13);
+    }
+  }
+
+  &__image-wrapper {
+    position: relative;
+    display: inline-block;
+  }
+
+  &__image {
+    width: fn.bs(563);
+    height: fn.bs(447);
+    margin-top: fn.bs(61);
+    margin-bottom: fn.bs(76);
+    z-index: 1;
+  }
+
+  &__square {
+    position: absolute;
+
+    &--dark {
+      background-color: #E7E9ED;
+      top: 0;
+      left: fn.bs(96);
+      width: fn.bs(170);
+      height: 100%;
+      z-index: 0;
+    }
+
+    &--light {
+      background-color: #1a365e;
+      bottom: 0;
+      right: 0;
+      opacity: 0.6;
+      width: fn.bs(267);
+      height: fn.bs(98);
+    }
+  }
+}

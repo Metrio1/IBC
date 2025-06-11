@@ -1,3 +1,5 @@
+@use "../functions" as fn;
+
 .header {
   display: flex;
   align-items: center;
@@ -12,15 +14,14 @@
   &__inner {
     display: flex;
     justify-content: space-between;
-    width: calc(1189 / 16 * var(--baseSize));
-    margin-inline: 19px;
+    width: fn.bs(1189);
+    margin-inline: fn.bs(19);
   }
 
   &__menu {
-
     &-list {
       display: flex;
-      gap: calc(22 / 16 * var(--baseSize));
+      gap: fn.bs(22);
     }
 
     &-link {

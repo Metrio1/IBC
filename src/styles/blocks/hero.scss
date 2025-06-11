@@ -1,16 +1,18 @@
+@use "../functions" as fn;
+
 .main-slider {
-  background-image: url('../public/images/hero/mainSlider.jpg');
+  background-image: url('../public/images/hero/main-slider-background.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-  height: calc(100vh - var(--headerHeight));
+  height: calc(100vh - var(--headerHeight)); // оставляем как есть, baseSize не используется
 }
 
 .hero {
   height: 100%;
   position: relative;
-  
+
   @media (max-width: 768px) {
     position: initial;
   }
@@ -19,8 +21,8 @@
     position: absolute;
     bottom: 0;
     right: 0;
-    width: calc(813 / 16 * var(--baseSize));
-    padding: 51px 71px 63px 60px;
+    width: fn.bs(813);
+    padding: fn.bs(51) fn.bs(71) fn.bs(63) fn.bs(60);
     background-color: rgba(0, 0, 0, 0.6);
     color: var(--colorLight);
 
@@ -33,13 +35,13 @@
   .actions {
     display: flex;
     justify-content: space-between;
-    gap: calc(21 / 16 * var(--baseSize));
+    gap: fn.bs(21);
 
     &__button {
       background: none;
       color: var(--colorLight);
       border: 1px solid var(--colorLight);
-      padding: 18px 72px;
+      padding: fn.bs(18) fn.bs(72);
 
       @media (max-width: 768px) {
         order: 1;
@@ -64,18 +66,17 @@
   }
 
   &__description {
-    margin-bottom: 26px;
+    margin-bottom: fn.bs(26);
   }
 
   .switches {
     display: flex;
-    gap: calc(21 / 16 * var(--baseSize));
+    gap: fn.bs(21);
 
     &__button {
-      padding: 20px;
+      padding: fn.bs(20);
       display: flex;
       align-items: center;
     }
   }
 }
-
