@@ -1,10 +1,32 @@
 @use "../functions" as fn;
 
 .pricing {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__body,
+  &__image-wrapper {
+    flex: 1 1 50%;
+  }
 
   &__legend {
     display: flex;
     gap: fn.bs(22);
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
 
     &-item {
       display: flex;
