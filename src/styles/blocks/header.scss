@@ -5,10 +5,15 @@
   background-color: var(--colorDark);
   min-height: var(--headerHeight);
 
+  &__burger-button {
+    color: var(--colorLight);
+  }
+
   &__inner {
     display: flex;
     justify-content: space-between;
     width: calc(1189 / 16 * var(--baseSize));
+    margin-inline: 19px;
   }
 
   &__menu {

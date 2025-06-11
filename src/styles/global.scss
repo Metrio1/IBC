@@ -8,14 +8,23 @@ body {
 
 @media (max-width: 768px) {
   :root {
-    --baseSize: calc(16 / 430 * 100 * 1vw);
+    --baseSize: calc(16 / 600 * 100 * 1vw);
   }
+}
+
+br + br {
+  display: block;
+  height: 1.2em;
 }
 
 .container {
   font-size: calc(18 / 16 * var(--baseSize));
   width: calc(1164 / 16 * var(--baseSize));
   margin: auto;
+
+  @media (max-width: 768px) {
+    width: 95%;
+  }
 }
 
 a {
@@ -26,4 +35,8 @@ a {
 
 h1, .h1 {
   font-size: calc(64 / 16 * var(--baseSize));
+}
+
+h2, h2 {
+  font-size: calc(40 / 16 * var(--baseSize));
 }

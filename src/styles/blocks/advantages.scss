@@ -1,0 +1,77 @@
+.advantages {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+
+  @media(max-width: 768px) {
+    flex-direction: column;
+  }
+
+  &__body,
+  &__image-wrapper {
+    flex: 1 1 50%;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    @media(max-width: 768px) {
+      order: 1;
+    }
+  }
+
+  &__title,
+  &__description {
+    width: 85%;
+
+    @media(max-width: 768px) {
+      width: 100%;
+    }
+  }
+
+  &__title {
+    text-transform: uppercase;
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__image-wrapper {
+    position: relative;
+    display: inline-block;
+  }
+
+  &__image {
+    width: calc(563 / 16 * var(--baseSize));
+    height: calc(447 / 16 * var(--baseSize));
+    margin-top: calc(61 / 16 * var(--baseSize));
+    margin-bottom: calc(76 / 16 * var(--baseSize));
+  }
+
+  &__square {
+    position: absolute;
+
+    &--dark {
+      background-color: #001c64;
+      top: 0;
+      left: calc(96 / 16 * var(--baseSize));
+      width: calc(170 / 16 * var(--baseSize));
+      height: 100%;
+      z-index: -1;
+    }
+
+    &--light {
+      background-color: #1a365e;
+      bottom: 0;
+      right: 0;
+      opacity: 0.6;
+      width: calc(267 / 16 * var(--baseSize));
+      height: calc(178 / 16 * var(--baseSize));
+    }
+  }
+}
