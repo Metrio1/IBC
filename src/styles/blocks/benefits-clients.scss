@@ -1,0 +1,22 @@
+.benefits-clients {
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 16px;
+    background-color: var(--colorPurple);
+    color: var(--colorLight);
+    padding: 30px 53px;
+  }
+}

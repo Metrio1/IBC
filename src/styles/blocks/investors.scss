@@ -1,5 +1,18 @@
+@use "../functions" as fn;
+
 .investors {
   display: flex;
   flex-direction: column;
   gap: 40px;
+
+  &__background {
+    height: fn.bs(536);
+
+    &-image {
+      position: absolute;
+      width: 100%;
+      left: 0;
+      height: fn.bs(536);
+    }
+  }
 }
