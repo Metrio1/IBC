@@ -1,0 +1,78 @@
+@use "../functions" as fn;
+
+.demand-structure {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: fn.bs(112);
+
+  &__body,
+  &__image-wrapper {
+    flex: 1 1 50%;
+  }
+
+  &__image-wrapper {
+    min-width: fn.bs(563);
+    min-height: fn.bs(447);
+    background-color: var(--colorLight);
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+
+    @media (max-width: 768px) {
+      order: 1;
+    }
+  }
+
+  &__title,
+  &__description {
+    width: 85%;
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__image-wrapper {
+    position: relative;
+    display: inline-block;
+  }
+
+  &__image {
+    width: fn.bs(563);
+    height: fn.bs(447);
+    margin-top: fn.bs(61);
+    margin-bottom: fn.bs(76);
+  }
+
+  &__square {
+    position: absolute;
+
+    &--dark {
+      background-color: #001c64;
+      top: 0;
+      left: fn.bs(96);
+      width: fn.bs(170);
+      height: 100%;
+      z-index: -1;
+    }
+
+    &--light {
+      background-color: #1a365e;
+      bottom: 0;
+      right: 0;
+      opacity: 0.6;
+      width: fn.bs(267);
+      height: fn.bs(178);
+    }
+  }
+}

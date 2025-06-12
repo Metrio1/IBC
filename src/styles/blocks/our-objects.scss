@@ -1,0 +1,12 @@
+@use "../functions" as fn;
+
+.our-objects {
+
+  &__title {
+    display: flex;
+    justify-content: center;
+    font-size: fn.bs(24);
+    color: var(--colorDanger);
+    letter-spacing: 0.11rem;
+  }
+}

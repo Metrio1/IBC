@@ -1,0 +1,7 @@
+@use "../functions" as fn;
+
+.clients {
+  display: flex;
+  flex-direction: column;
+  gap: fn.bs(80);
+}
