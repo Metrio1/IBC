@@ -1,0 +1,19 @@
+@use "../functions" as fn;
+
+.button {
+  padding: fn.bs(18) fn.bs(72);
+  font-size: fn.bs(16);
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+
+  &--blue {
+    color: var(--colorLight);
+    background-color: var(--colorPurple);
+
+    &:hover {
+      background-color: var(--colorDarkPurple);
+      transition-duration: var(--transition-duration);
+    }
+  }
+}

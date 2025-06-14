@@ -8,5 +8,36 @@
     font-size: fn.bs(24);
     color: var(--colorDanger);
     letter-spacing: 0.11rem;
+    margin-bottom: fn.bs(24);
+  }
+
+  &__slide {
+    display: flex;
+    flex-direction: column;
+    gap: fn.bs(80);
+    margin-bottom: fn.bs(40);
+
+    &-left,
+    &-right {
+      flex: 1 1 50%;
+    }
+
+    &-body {
+      display: flex;
+      gap: fn.bs(30);
+    }
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+      gap: fn.bs(24);
+      margin-bottom: fn.bs(24);
+    }
+
+    &-item {
+      display: flex;
+      align-items: start;
+      gap: fn.bs(12);
+    }
   }
 }
