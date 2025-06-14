@@ -29,11 +29,15 @@
     display: inline-flex;
     flex-direction: column;
     gap: fn.bs(26);
+    
+    @media (max-width: 768px) {
+      margin: 5%;
+    }
   }
 
   &__title {
     width: 80%;
     font-size: fn.bs(48);
-    text-transform: capitalize;
+    text-transform: inherit;
   }
 }

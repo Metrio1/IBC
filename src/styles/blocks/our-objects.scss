@@ -11,6 +11,10 @@
     margin-bottom: fn.bs(24);
   }
 
+  &__image {
+    width: 100%;
+  }
+
   &__slide {
     display: flex;
     flex-direction: column;
@@ -20,11 +24,17 @@
     &-left,
     &-right {
       flex: 1 1 50%;
+      display: flex;
+      flex-direction: column;
     }
 
     &-body {
       display: flex;
       gap: fn.bs(30);
+
+      @media (max-width: 768px) {
+        flex-direction: column;
+      }
     }
 
     &-list {
@@ -38,6 +48,11 @@
       display: flex;
       align-items: start;
       gap: fn.bs(12);
+    }
+
+    &-icon {
+      width: fn.bs(27);
+      height: fn.bs(27);
     }
   }
 }

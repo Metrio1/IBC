@@ -21,5 +21,10 @@
   &--white {
     color: var(--colorPurple);
     background-color: var(--colorLight);
+
+    &:hover {
+      background-color: var(--colorSilver);
+      transition-duration: var(--transition-duration);
+    }
   }
 }

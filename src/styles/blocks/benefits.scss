@@ -21,4 +21,9 @@
     align-items: center;
     gap: fn.bs(32);
   }
+
+  &__icon {
+    width: fn.bs(75);
+    height: fn.bs(66);
+  }
 }

@@ -14,11 +14,26 @@
     margin-left: fn.bs(137);
     padding-bottom: fn.bs(45);
     max-width: fn.bs(1092);
+
+    @media (max-width: 768px) {
+      margin-inline: 5%;
+    }
   }
 
   &__grid {
     display: grid;
+    column-gap: fn.bs(12);
+    row-gap: fn.bs(50);
     grid-template-columns: repeat(4, 1fr);
+
+    @media (max-width: 1024px) {
+      grid-template-columns: repeat(2, 1fr);
+      margin-bottom: fn.bs(24);
+    }
+
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 
   &__column {
@@ -33,9 +48,14 @@
     gap: fn.bs(20);
   }
 
-  &__item {
+  &__link {
     display: flex;
     gap: fn.bs(9);
+
+    &:hover {
+      color: var(--colorSilver);
+      transition-duration: var(--transition-duration);
+    }
   }
 
   &__media {

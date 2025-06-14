@@ -7,7 +7,12 @@
   background-repeat: no-repeat;
   width: 100%;
   height: fn.bs(391);
-  
+
+  @media (max-width: 768px) {
+    background-position: 20% center; // Явно фиксируем левую часть
+    background-attachment: local; // Фиксируем позицию при скролле
+  }
+
   &__body {
     width: fn.bs(260);
     margin: fn.bs(73) fn.bs(86);

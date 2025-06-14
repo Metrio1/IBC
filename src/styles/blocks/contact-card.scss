@@ -4,6 +4,14 @@
   width: 100%;
   background-color: var(--colorDark);
 
+  &__link {
+
+    &:hover {
+      color: var(--colorGray);
+      transition-duration: var(--transition-duration);
+    }
+  }
+
   &__image {
     width: 100%;
   }

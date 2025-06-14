@@ -12,7 +12,7 @@
 
   &__button {
     @include reset-button;
-    padding: 6px;
+    padding: fn.bs(6);
     border-radius: 50%;
     background-color: var(--colorGray);
     position: relative;

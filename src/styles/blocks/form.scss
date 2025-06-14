@@ -1,9 +1,15 @@
 @use "../functions" as fn;
 
 .form {
-  min-width: fn.bs(585);
   padding-block: fn.bs(40);
   padding-left: fn.bs(76);
+  padding-right: fn.bs(209);
+
+  @media (max-width: 768px) {
+    padding-inline: 0;
+    display: flex;
+    justify-content: center;
+  }
 
   &__body {
     display: flex;
