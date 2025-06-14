@@ -1,3 +1,49 @@
+@use "../functions" as fn;
+
 .contact-card {
+  width: 100%;
   background-color: var(--colorDark);
+
+  &__image {
+    width: 100%;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    color: var(--colorLight);
+    padding: fn.bs(22) fn.bs(32);
+    gap: fn.bs(12);
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    font-size: fn.bs(14);
+    font-weight: 400;
+    opacity: 0.7;
+    gap: fn.bs(6);
+  }
+
+  &__contacts {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: fn.bs(6);
+    column-gap: fn.bs(12);
+  }
+
+  &__email,
+  &__phone {
+    display: flex;
+    white-space: nowrap;
+    align-items: center;
+    gap: fn.bs(6);
+  }
+
+  &__email-text,
+  &__phone-text {
+    display: inline-flex;
+    align-items: end;
+    height: 100%;
+  }
 }

@@ -1,0 +1,39 @@
+@use "../functions" as fn;
+
+.consultation {
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+
+  &__left {
+    background-image: url("../../../public/images/consultation/consultation-background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__icon {
+    width: fn.bs(55);
+    height: fn.bs(55);
+  }
+
+  &__header {
+    color: var(--colorLight);
+    display: inline-flex;
+    flex-direction: column;
+    gap: fn.bs(26);
+  }
+
+  &__title {
+    width: 80%;
+    font-size: fn.bs(48);
+    text-transform: capitalize;
+  }
+}

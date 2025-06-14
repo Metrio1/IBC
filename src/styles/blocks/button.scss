@@ -6,6 +6,7 @@
   font-weight: 700;
   border: none;
   cursor: pointer;
+  white-space: nowrap;
 
   &--blue {
     color: var(--colorLight);
@@ -15,5 +16,10 @@
       background-color: var(--colorDarkPurple);
       transition-duration: var(--transition-duration);
     }
+  }
+
+  &--white {
+    color: var(--colorPurple);
+    background-color: var(--colorLight);
   }
 }

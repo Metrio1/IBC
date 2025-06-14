@@ -1,0 +1,64 @@
+@use "../functions" as fn;
+
+.form {
+  min-width: fn.bs(585);
+  padding-block: fn.bs(40);
+  padding-left: fn.bs(76);
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    gap: fn.bs(19);
+    width: fn.bs(300);
+  }
+
+  &__field {
+    display: flex;
+    flex-direction: column;
+    gap: fn.bs(7);
+  }
+
+  &__submit {
+    width: 100%;
+  }
+}
+
+.field {
+  &__label {
+    font-size: fn.bs(15);
+    font-weight: 700;
+  }
+
+  &__select {
+    appearance: none; // для Safari
+    -webkit-appearance: none; // для iOS Safari
+    -moz-appearance: none; // для Firefox
+    background-image: url('../../../public/images/consultation/arrow-down-icon.svg');
+    background-repeat: no-repeat;
+    background-position: right fn.bs(22) center;
+  }
+
+  &__input {
+    padding: fn.bs(15) fn.bs(19);
+    font-size: fn.bs(15);
+    border: 1px solid var(--colorLight);
+    background-color: var(--colorPurple);
+    color: var(--colorLight);
+
+    &::placeholder {
+      color: var(--colorLight);
+      opacity: 0.5;
+    }
+
+    &:focus {
+      border-color: #fff;
+      outline: none;
+    }
+
+    &--textarea {
+      min-height: 100px;
+      resize: vertical;
+    }
+  }
+
+}

@@ -1,0 +1,28 @@
+@use "../functions" as fn;
+
+.channel {
+  background-image: url("../../../public/images/channel/channel-image.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: fn.bs(391);
+  
+  &__body {
+    width: fn.bs(260);
+    margin: fn.bs(73) fn.bs(86);
+    display: inline-flex;
+    flex-direction: column;
+    gap: fn.bs(38);
+  }
+
+  &__title {
+    line-height: 1.2;
+    font-weight: 400;
+    color: var(--colorLight);
+  }
+
+  &__button {
+    padding: fn.bs(11) fn.bs(38);
+  }
+}

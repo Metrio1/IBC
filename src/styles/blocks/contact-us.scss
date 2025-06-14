@@ -1,0 +1,49 @@
+@use "../functions" as fn;
+
+
+.contact-us {
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    margin-bottom: fn.bs(36);
+  }
+
+  &__container {
+    padding-top: fn.bs(61);
+    margin-left: fn.bs(137);
+    padding-bottom: fn.bs(45);
+    max-width: fn.bs(1092);
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+    gap: fn.bs(25);
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: fn.bs(20);
+  }
+
+  &__item {
+    display: flex;
+    gap: fn.bs(9);
+  }
+
+  &__media {
+    &-button {
+      margin-left: auto;
+      width: fn.bs(300);
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

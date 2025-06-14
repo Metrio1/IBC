@@ -1,3 +1,37 @@
+@use "../functions" as fn;
+
 .contacts {
-  
+  display: flex;
+  flex-direction: column;
+  gap: fn.bs(80);
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 21px;
+    row-gap: 21px;
+    column-gap: 29px;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+
+  &__item {
+    display: flex;
+    width: 100%;
+
+    @media (min-width: 768px) {
+      &:nth-child(1),
+      &:nth-child(2) {
+        grid-column: span 3;
+      }
+
+      &:nth-child(n + 3) {
+        grid-column: span 2;
+      }
+    }
+
+  }
 }
