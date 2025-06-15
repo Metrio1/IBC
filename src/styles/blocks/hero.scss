@@ -32,6 +32,10 @@
     }
   }
 
+  &__title {
+    margin-bottom: fn.bs(12);
+  }
+
   .actions {
     display: flex;
     justify-content: space-between;
@@ -51,6 +55,7 @@
         background-color: var(--colorLight);
         color: var(--colorDark);
         --iconColor: rgba(0, 0, 0);
+        transition-duration: var(--transition-duration);
       }
     }
 

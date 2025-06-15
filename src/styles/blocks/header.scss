@@ -29,6 +29,11 @@
       text-transform: uppercase;
       letter-spacing: 1.5px;
       color: var(--colorLight);
+
+      &:hover {
+        color: var(--colorSilver);
+        transition-duration: var(--transition-duration);
+      }
     }
   }
 }

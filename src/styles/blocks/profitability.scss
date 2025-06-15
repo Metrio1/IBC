@@ -5,14 +5,19 @@
   &__header {
     display: flex;
     flex-direction: column;
-    gap: 40px;
-    margin-bottom: 60px;
+    gap: fn.bs(40);
+    margin-bottom: fn.bs(60);
+
+    @media (max-width: 768px) {
+      gap: fn.bs(20);
+      margin-bottom: fn.bs(10);
+    }
   }
 
   &__grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    gap: fn.bs(20);
 
     @media (max-width: 768px) {
       grid-template-columns: 1fr;
@@ -43,10 +48,11 @@
     position: relative;
     padding: fn.bs(30) fn.bs(53);
     background-color: var(--colorLight);
-    display: flex;
-    flex-direction: column;
 
     &--rent {
+      display: flex;
+      justify-content: end;
+      align-items: end;
       background-color: var(--colorPurple);
       color: var(--colorLight);
 
@@ -55,13 +61,13 @@
       }
 
       .profitability {
+        display: flex;
 
         &__value {
           color: var(--colorLight);
         }
 
         &__text {
-          align-self: flex-end;
           text-align: right;
           margin-bottom: fn.bs(16);
         }
@@ -77,6 +83,7 @@
   &__value {
     color: var(--colorDarkBlue);
     font-size: fn.bs(64);
+    font-weight: 700;
     font-family: 'Open Sans', sans-serif;
   }
 

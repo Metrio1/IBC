@@ -47,11 +47,19 @@
     display: inline-block;
   }
 
-  &__image {
-    width: fn.bs(563);
-    height: fn.bs(447);
+  &__image-wrapper {
+    background-color: var(--colorLight);
+    padding-left: fn.bs(26);
+    padding-right: fn.bs(8);
     margin-top: fn.bs(61);
     margin-bottom: fn.bs(76);
+    position: relative;
+    z-index: 2;
+  }
+
+  &__image {
+    max-width: fn.bs(563);
+    height: fn.bs(447);
   }
 
   &__square {
@@ -63,7 +71,7 @@
       left: fn.bs(96);
       width: fn.bs(170);
       height: 100%;
-      z-index: -1;
+      z-index: 1;
     }
 
     &--light {
@@ -73,6 +81,7 @@
       opacity: 0.6;
       width: fn.bs(267);
       height: fn.bs(178);
+      z-index: 2;
     }
   }
 }

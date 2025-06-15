@@ -5,7 +5,11 @@
   flex-direction: column;
   gap: fn.bs(80);
 
-  .characteristics__grid {
+  &__title {
+    width: 70%;
+  }
+
+  &__grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: fn.bs(64);

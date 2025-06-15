@@ -3,7 +3,7 @@
 .investors {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: fn.bs(40);
 
   &__background {
     height: fn.bs(536);

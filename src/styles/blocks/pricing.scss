@@ -3,7 +3,7 @@
 .pricing {
   display: flex;
   align-items: center;
-  gap: 32px;
+  gap: fn.bs(32);
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -12,7 +12,7 @@
   &__body {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: fn.bs(20);
   }
 
   &__body,
@@ -37,6 +37,7 @@
   &__image-wrapper {
     position: relative;
     display: inline-block;
+
   }
 
   &__image {
@@ -44,7 +45,8 @@
     height: fn.bs(447);
     margin-top: fn.bs(61);
     margin-bottom: fn.bs(76);
-    z-index: 1;
+    position: relative;
+    z-index: 2;
   }
 
   &__square {
@@ -56,7 +58,7 @@
       left: fn.bs(96);
       width: fn.bs(170);
       height: 100%;
-      z-index: 0;
+      z-index: 1;
     }
 
     &--light {
@@ -66,6 +68,7 @@
       opacity: 0.6;
       width: fn.bs(267);
       height: fn.bs(98);
+      z-index: 2;
     }
   }
 }

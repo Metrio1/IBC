@@ -3,7 +3,8 @@
 .applicability {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: fn.bs(40);
+  margin-block: fn.bs(40);
 
   &__list {
     display: flex;
@@ -14,7 +15,7 @@
   &__item {
     display: flex;
     align-items: stretch;
-    gap: 16px;
+    gap: fn.bs(16);
   }
 
   &__text {
@@ -24,7 +25,7 @@
     position: relative;
     display: flex;
     align-items: center;
-    padding-bottom: 8px;
+    padding-bottom: fn.bs(8);
 
     &::after {
       content: '';
@@ -35,5 +36,10 @@
       height: 1px;
       background-color: #6984A1;
     }
+  }
+
+  &__icon {
+    width: fn.bs(98);
+    height: fn.bs(98);
   }
 }
