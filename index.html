@@ -13,7 +13,7 @@
                         alt="Логотип IBC"
                         class="logo__image">
             </a>
-            <nav class="header__menu hidden-mobile">
+            <nav class="header__menu hidden-desktop">
                 <ul class="header__menu-list">
                     <li class="header__menu-item">
                         <a class="header__menu-link" href="/">Что такое Light Industrial</a>
@@ -38,13 +38,16 @@
                     </li>
                 </ul>
             </nav>
-            <div class="header__burger-button visible-mobile">
+            <button class="header__burger-button visible-desktop button"
+                    type="button"
+                    onclick="mobileOverlay.showModal()"
+            >
                 <svg width="41" height="23" viewBox="0 0 41 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect width="41" height="3" rx="1.5" fill="white"/>
                     <rect y="10" width="41" height="3" rx="1.5" fill="white"/>
                     <rect y="20" width="41" height="3" rx="1.5" fill="white"/>
                 </svg>
-            </div>
+            </button>
         </div>
     </header>
     <main class="content">
@@ -63,9 +66,9 @@
                         </p>
                     </div>
                     <div class="actions">
-                        <button class="actions__contactUs button actions__button">
+                        <a href="#consultation-form" class="actions__contactUs button actions__button">
                             Связаться с нами
-                        </button>
+                        </a>
                         <div class="actions__switches switches">
                             <button class="switches__left actions__button switches__button button">
                                 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="24" height="24" viewBox="0 0 256 256" xml:space="preserve">
@@ -325,7 +328,7 @@
                     Клиентам
                 </h2>
                 <div class="benefits-clients">
-                    <h3>
+                    <h3 class="benefits-clients__title">
                         Преимущества формата Light Industrial для клиентов
                     </h3>
                     <ul class="benefits-clients__list">
@@ -702,7 +705,7 @@
                     </h2>
                 </header>
             </div>
-            <form class="consultation__form form" action="#" method="post">
+            <form id="consultation-form" class="consultation__form form" action="#" method="post">
                 <div class="form__body">
                     <div class="form__field field">
                         <label class="field__label" for="name">Ваше имя</label>
@@ -817,6 +820,37 @@
                 <a href="#" class="contact-us__media-button button button--white">СМИ о нас</a>
         </section>
     </footer>
+
+    <dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
+        <form class="mobile-overlay__close-button-wrapper" method="dialog">
+            <button
+                    class="mobile-overlay__close-button cross-button"
+                    type="submit"
+            >
+                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="24px" height="24px"><path fill="currentColor" d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z"/></svg>
+                <span class="visually-hidden">Close navigation menu</span>
+            </button>
+        </form>
+        <div class="mobile-overlay__body">
+            <ul class="mobile-overlay__list">
+                <li class="mobile-overlay__item">
+                    <a class="mobile-overlay__link" href="/">Что такое Light Industrial</a>
+                </li>
+                <li class="mobile-overlay__item">
+                    <a class="mobile-overlay__link" href="/">Инвесторам</a>
+                </li>
+                <li class="mobile-overlay__item">
+                    <a class="mobile-overlay__link" href="/">Наши объекты</a>
+                </li>
+                <li class="mobile-overlay__item">
+                    <a class="mobile-overlay__link" href="/">Оставить заявку</a>
+                </li>
+                <li class="mobile-overlay__item">
+                    <a class="mobile-overlay__link" href="/">8 800 20 11 555</a>
+                </li>
+            </ul>
+        </div>
+    </dialog>
     <script type="module" src="./src/js/main.js"></script>
 </body>
 </html>

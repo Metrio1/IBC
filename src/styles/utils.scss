@@ -1,12 +1,12 @@
 @use 'mixins';
 
-.hidden-mobile {
+.hidden-desktop {
   @media (max-width: 1280px) {
     display: none !important;
   }
 }
 
-.visible-mobile {
+.visible-desktop {
   @media (min-width: 1279px) {
     display: none !important;
   }

@@ -62,7 +62,7 @@
     }
 
     &--textarea {
-      min-height: 100px;
+      min-height: fn.bs(100);
       resize: vertical;
     }
   }

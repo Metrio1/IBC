@@ -3,7 +3,7 @@
 .advantages {
   display: flex;
   align-items: center;
-  gap: 32px;
+  gap: fn.bs(32);
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -17,7 +17,7 @@
   &__body {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: fn.bs(40);
 
     @media (max-width: 768px) {
       order: 1;
@@ -36,7 +36,7 @@
   &__description {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: fn.bs(10);
   }
 
   &__image-wrapper {

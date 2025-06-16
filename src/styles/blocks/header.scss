@@ -8,11 +8,14 @@
   min-height: var(--headerHeight);
 
   &__burger-button {
+    padding: 0;
+    background-color: transparent;
     color: var(--colorLight);
   }
 
   &__inner {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     width: fn.bs(1189);
     margin-inline: fn.bs(19);
@@ -25,7 +28,7 @@
     }
 
     &-link {
-      font-size: 10px;
+      font-size: fn.bs(10);
       text-transform: uppercase;
       letter-spacing: 1.5px;
       color: var(--colorLight);

@@ -1,9 +1,15 @@
+@use "../functions" as fn;
+
 .benefits-clients {
+
+  &__title {
+    margin-bottom: fn.bs(40);
+  }
 
   &__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 28px;
+    gap: fn.bs(28);
 
     @media (max-width: 768px) {
       grid-template-columns: 1fr;
@@ -14,9 +20,9 @@
     display: flex;
     flex-direction: column;
     height: 100%;
-    gap: 16px;
+    gap: fn.bs(16);
     background-color: var(--colorPurple);
     color: var(--colorLight);
-    padding: 30px 53px;
+    padding: fn.bs(30) fn.bs(53);
   }
 }

@@ -8,9 +8,8 @@
   &__list {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    gap: 21px;
-    row-gap: 21px;
-    column-gap: 29px;
+    row-gap: fn.bs(21);
+    column-gap: fn.bs(29);
 
     @media (max-width: 768px) {
       grid-template-columns: 1fr;

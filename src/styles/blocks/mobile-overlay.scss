@@ -1,0 +1,50 @@
+@use "../functions" as fn;
+
+.mobile-overlay {
+  color: var(--colorLight);
+  background-color: var(--colorDark);
+  height: 100%;
+  margin-right: 0;
+  padding: 14px 20px;
+  border: none;
+
+  &__close-button {
+    color: var(--colorLight);
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: fn.bs(10);
+    margin-bottom: fn.bs(32);
+
+    &:hover {
+      color: var(--colorDanger);
+      transition-duration: var(--transition-duration);
+    }
+  }
+
+  &:modal {
+    max-height: 100%;
+  }
+
+  &__close-button-wrapper {
+    display: flex;
+    justify-content: end;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: fn.bs(20);
+    min-height: 80vh;
+  }
+
+  &__item {
+    &:hover {
+      color: var(--colorSilver);
+      transition-duration: var(--transition-duration);
+    }
+  }
+}
