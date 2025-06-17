@@ -12,8 +12,10 @@
 
   &__button {
     @include reset-button;
-    padding: fn.bs(6);
+    width: fn.bs(12);
+    height: fn.bs(12);
     border-radius: 50%;
+    margin: 0 fn.bs(8);
     background-color: var(--colorGray);
     position: relative;
 
@@ -21,4 +23,14 @@
       background-color: var(--colorPurple);
     }
   }
+
+  //&__button {
+  //  width: 12px;
+  //  height: 12px;
+  //  background-color: gray;
+  //  border-radius: 50%;
+  //  margin: 0 4px;
+  //  border: none;
+  //  cursor: pointer;
+  //}
 }

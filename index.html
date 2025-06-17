@@ -3,106 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
-    <header class="header">
-        <div class="header__inner">
-            <a href="" class="header__logo logo">
-                <img
-                        src="public/images/header/header-logo.png"
-                        alt="Логотип IBC"
-                        class="logo__image">
-            </a>
-            <nav class="header__menu hidden-desktop">
-                <ul class="header__menu-list">
-                    <li class="header__menu-item">
-                        <a class="header__menu-link" href="/">Что такое Light Industrial</a>
-                    </li>
-                    <li class="header__menu-item">
-                        <a class="header__menu-link" href="/">Инвесторам</a>
-                    </li>
-                    <li class="header__menu-item">
-                        <a class="header__menu-link" href="/">Наши объекты</a>
-                    </li>
-                    <li class="header__menu-item">
-                        <a class="header__menu-link" href="/">Оставить заявку</a>
-                    </li>
-                    <li class="header__menu-item">
-                        <a class="header__menu-link" href="/">Контакты</a>
-                    </li>
-                    <li class="header__menu-item">
-                        <a class="header__menu-link" href="/">Контакты</a>
-                    </li>
-                    <li class="header__menu-item">
-                        <a class="header__menu-link" href="/">8 800 20 11 555</a>
-                    </li>
-                </ul>
-            </nav>
-            <button class="header__burger-button visible-desktop button"
-                    type="button"
-                    onclick="mobileOverlay.showModal()"
-            >
-                <svg width="41" height="23" viewBox="0 0 41 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="41" height="3" rx="1.5" fill="white"/>
-                    <rect y="10" width="41" height="3" rx="1.5" fill="white"/>
-                    <rect y="20" width="41" height="3" rx="1.5" fill="white"/>
-                </svg>
-            </button>
-        </div>
-    </header>
-    <main class="content">
-        <section class="main-slider">
-            <div class="swiper">
-                <div class="swiper-wrapper">
-
-                    <div class="swiper-slide">
-                        <div class="hero container">
-                            <div class="hero__body ">
-                                <h1 class="hero__title">
-                                    Light Industrial
-                                </h1>
-                                <div class="hero__description">
-                                    <p>
-                                        Объект индустриальной недвижимости, имеющий производственное или складское назначение, а также свободное назначение для малого и среднего бизнеса. Основное отличие – небольшая площадь и развитая инфраструктура. 
-                                        Локация стремится к городской черте.
-                                        Многофункциональное пространство с офисами и парковочными местами.
-                                        Все процессы бизнеса в одном месте.
-                                    </p>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="hero container">
-                            <div class="hero__body">
-                                <h1 class="hero__title">Второй слайд</h1>
-                                <div class="hero__description">
-                                    <p>
-                                        Содержание второго слайда...
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
+<header class="header">
+    <div class="header__inner">
+        <a href="" class="header__logo logo">
+            <img
+                    src="public/images/header/header-logo.png"
+                    alt="Логотип IBC"
+                    class="logo__image">
+        </a>
+        <nav class="header__menu hidden-desktop">
+            <ul class="header__menu-list">
+                <li class="header__menu-item">
+                    <a class="header__menu-link" href="/">Что такое Light Industrial</a>
+                </li>
+                <li class="header__menu-item">
+                    <a class="header__menu-link" href="/">Инвесторам</a>
+                </li>
+                <li class="header__menu-item">
+                    <a class="header__menu-link" href="/">Наши объекты</a>
+                </li>
+                <li class="header__menu-item">
+                    <a class="header__menu-link" href="/">Оставить заявку</a>
+                </li>
+                <li class="header__menu-item">
+                    <a class="header__menu-link" href="/">Контакты</a>
+                </li>
+                <li class="header__menu-item">
+                    <a class="header__menu-link" href="/">Контакты</a>
+                </li>
+                <li class="header__menu-item">
+                    <a class="header__menu-link" href="/">8 800 20 11 555</a>
+                </li>
+            </ul>
+        </nav>
+        <button class="header__burger-button visible-desktop button"
+                type="button"
+                onclick="mobileOverlay.showModal()"
+        >
+            <svg width="41" height="23" viewBox="0 0 41 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="41" height="3" rx="1.5" fill="white"/>
+                <rect y="10" width="41" height="3" rx="1.5" fill="white"/>
+                <rect y="20" width="41" height="3" rx="1.5" fill="white"/>
+            </svg>
+        </button>
+    </div>
+</header>
+<main class="content">
+    <section class="main-slider">
+        <div class="main-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" data-title="Light Industrial" data-desc="
+                <p>Объект индустриальной недвижимости, имеющий производственное или складское назначение, а также свободное назначение для малого и среднего бизнеса. Основное отличие – небольшая площадь и развитая инфраструктура. 
+                    Локация стремится к городской черте.
+                    Многофункциональное пространство с офисами и парковочными местами.
+                    Все процессы бизнеса в одном месте.</p>">
+                    <img class="main-slider__slide" src="public/images/hero/main-slider-background_1.jpg" alt="">
                 </div>
 
+                <div class="swiper-slide" data-title="История формата" data-desc="Формат пришел около 10 лет назад в Россию и сейчас находится в фазе активного роста. На данный момент складские площади в 27 раз превышают площади Light Industrial, тогда как на рынке США форматы примерно равны в процентном соотношении, а в Германии склады имеют всего 45% рынка, в европейских столицах схожая ситуация.">
+                    <img class="main-slider__slide" src="public/images/hero/main-slider-background_2.jpg" alt="">
+                </div>
+
+                <div class="swiper-slide" data-title="Особенности формата" data-desc="Склады формата Light industrial играют важную роль в цепочках поставок, обеспечивая быструю и эффективную обработку товаров и удовлетворение потребностей клиентов.Основной особенностью является – площадь. Блоки имеют стандартный минимальный размер 300 – 500 кв.м. и могут объединяться в необходимой конфигурации.Данные объектыпользуются спросом как покупка для собственного использования, так и как вариант для инвестирования с последующей сдачей в аренду.">
+                    <img src="public/images/hero/main-slider-background_2.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="hero container">
+            <div class="hero__body">
+                <h1 class="hero__title" data-js-hero-title></h1>
+                <div class="hero__description" data-js-hero-description></div>
                 <div class="actions">
                     <a href="#consultation-form" class="actions__contactUs button actions__button">
                         Связаться с нами
                     </a>
                     <div class="actions__switches switches">
-                        <button class="switches__left actions__button switches__button button">
+                        <button class="switches__left actions__button switches__button button" data-js-prev>
                             <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="24" height="24" viewBox="0 0 256 256" xml:space="preserve">
                                         <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)">
                                             <path d="M 65.75 90 c 0.896 0 1.792 -0.342 2.475 -1.025 c 1.367 -1.366 1.367 -3.583 0 -4.949 L 29.2 45 L 68.225 5.975 c 1.367 -1.367 1.367 -3.583 0 -4.95 c -1.367 -1.366 -3.583 -1.366 -4.95 0 l -41.5 41.5 c -1.367 1.366 -1.367 3.583 0 4.949 l 41.5 41.5 C 63.958 89.658 64.854 90 65.75 90 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: var(--iconColor, rgb(255,255,255)); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round"/>
                                         </g>
                                         </svg>
                         </button>
-                        <button class="switches__right actions__button switches__button button">
+                        <button class="switches__right actions__button switches__button button" data-js-next>
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 256 256" xml:space="preserve">
                                             <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)">
                                                 <path d="M 24.25 90 c -0.896 0 -1.792 -0.342 -2.475 -1.025 c -1.367 -1.366 -1.367 -3.583 0 -4.949 L 60.8 45 L 21.775 5.975 c -1.367 -1.367 -1.367 -3.583 0 -4.95 c 1.367 -1.366 3.583 -1.366 4.95 0 l 41.5 41.5 c 1.367 1.366 1.367 3.583 0 4.949 l -41.5 41.5 C 26.042 89.658 25.146 90 24.25 90 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: var(--iconColor, rgb(255,255,255)); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round"/>
@@ -112,787 +99,825 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="section container">
-            <div class="advantages">
-                <div class="advantages__body">
-                    <h2 class="advantages__title">
-                        Строительство объектов Light Industrial
-                    </h2>
-                    <div class="advantages__description">
-                        <p>
-                            Легкие конструкции, экономия времени и средств, а также гибкость проектирования делают такие объекты востребованными на рынке.
-                        </p>
-                        <p>
-                            Производственно-складские площади формата Light Industrial играют важную роль в цепочках поставок, обеспечивая быструю и эффективную обработку товаров и удовлетворение потребностей клиентов.
-                        </p>
-                    </div>
-                </div>
-                <div class="advantages__image-wrapper">
-                    <img src="public/images/advantages/advantages-image.jpg" alt="" class="advantages__image">
-                    <div class="advantages__decoration">
-                        <span class="advantages__square advantages__square--dark"></span>
-                        <span class="advantages__square advantages__square--light"></span>
-                    </div>
+        </div>
+    </section>
+    <section class="section container">
+        <div class="advantages">
+            <div class="advantages__body">
+                <h2 class="advantages__title">
+                    Строительство объектов Light Industrial
+                </h2>
+                <div class="advantages__description">
+                    <p>
+                        Легкие конструкции, экономия времени и средств, а также гибкость проектирования делают такие объекты востребованными на рынке.
+                    </p>
+                    <p>
+                        Производственно-складские площади формата Light Industrial играют важную роль в цепочках поставок, обеспечивая быструю и эффективную обработку товаров и удовлетворение потребностей клиентов.
+                    </p>
                 </div>
             </div>
-        </section>
-        <section class="section container">
-            <div class="characteristics">
-                <h2 class="characteristics__title">
-                    Основные характеристики объектов Light Industrial
-                </h2>
-                <div class="characteristics__grid">
-                    <ul class="characteristics__list">
-                        <li class="characteristics__item">
-                            <img src="public/icons/characteristics/building-icon.svg" alt="" class="characteristics__icon">
-                            <span>Современное новое здание <strong>не старше 15 лет</strong></span>
-                        </li>
-                        <li class="characteristics__item">
-                            <img src="public/icons/characteristics/ceiling-height-icon.svg" alt="" class="characteristics__icon">
-                            <span>Высота потолка — <strong>8 метров</strong></span>
-                        </li>
-                        <li class="characteristics__item">
-                            <img src="public/icons/characteristics/floor-icon.svg" alt="" class="characteristics__icon">
-                            <span>Бетонный пол с антипылевым покрытием</span>
-                        </li>
-                        <li class="characteristics__item">
-                            <img src="public/icons/characteristics/floor-load-icon.svg" alt="" class="characteristics__icon">
-                            <span>Нагрузка на пол — <strong>5 тонн/м²</strong></span>
-                        </li>
-                        <li class="characteristics__item">
-                            <img src="/public/icons/characteristics/dock-icon.svg" alt="" class="characteristics__icon">
-                            <span>1 док на предназначенный блок</span>
-                        </li>
-                        <li class="characteristics__item">
-                            <img src="public/icons/characteristics/office-icon.svg" alt="" class="characteristics__icon">
-                            <span>Наличие индивидуального АБК в блоке, офис <strong>50 кв.м.</strong></span>
-                        </li>
-                        <li class="characteristics__item">
-                            <img src="public/icons/characteristics/park-icon.svg" alt="" class="characteristics__icon">
-                            <span>Не менее <strong>2 парковочных мест</strong> на блок</span>
-                        </li>
-                    </ul>
-
-                    <div class="characteristics__map">
-                        <img src="./public/images/characteristics/map-image.jpg" alt="Планировка" class="characteristics__plan">
-                    </div>
-
-                    <div class="characteristics__map">
-                        <img src="public/images/characteristics/layout-image.jpg" alt="План блоков" class="characteristics__plan">
-                    </div>
-
-                    <ul class="characteristics__list">
-                        <li class="characteristics__item">
-                            <img src="public/icons/characteristics/landscaping-icon.svg" alt="" class="characteristics__icon">
-                            <span>Благоустройство территории</span>
-                        </li>
-                        <li class="characteristics__item">
-                            <img src="public/icons/characteristics/electricity-icon.svg" alt="" class="characteristics__icon">
-                            <span>Электричество — <strong>20 Вт/кв.м.</strong> на блок</span>
-                        </li>
-                        <li class="characteristics__item">
-                            <img src="public/icons/characteristics/heating-system-icon.svg" alt="" class="characteristics__icon">
-                            <span>Система отопления</span>
-                        </li>
-                        <li class="characteristics__item">
-                            <img src="public/icons/characteristics/fire-extinguishing-system-icon.svg" alt="" class="characteristics__icon">
-                            <span>Система пожаротушения</span>
-                        </li>
-                        <li class="characteristics__item">
-                            <img src="public/icons/characteristics/cameras-icon.svg" alt="" class="characteristics__icon">
-                            <span>Охраняемая территория, доступ <strong>24/7</strong>, видеонаблюдение</span>
-                        </li>
-                        <li class="characteristics__item">
-                            <img src="public/icons/characteristics/managemant-company-icon.svg" alt="" class="characteristics__icon">
-                            <span>Управляющая компания</span>
-                        </li>
-                    </ul>
+            <div class="advantages__image-wrapper">
+                <img src="public/images/advantages/advantages-image.jpg" alt="" class="advantages__image">
+                <div class="advantages__decoration">
+                    <span class="advantages__square advantages__square--dark"></span>
+                    <span class="advantages__square advantages__square--light"></span>
                 </div>
             </div>
-        </section>
-        <section class="section section--grey">
-            <div class="section__body investors container">
-                <h2 class="profitability__title h1">
-                    Инвесторам
-                </h2>
-                <div class="profitability">
-                    <header class="profitability__header">
-                        <h3 class="profitability__subtitle">
-                            Доходность инвестиций в Light Industrial
-                        </h3>
-                        <div class="profitability__description">
-                            <p>
-                                На фоне дефицита свободного предложения цена квадратного метра в проектах Light Industrial только за прошедший год выросла в среднем на 18%, а за последние три года - более чем на 60%.
-                            </p>
-                        </div>
-                    </header>
-                    <div class="profitability__grid">
-                        <div class="profitability__card profitability__card--growth">
-                            <img src="public/icons/profitability/growth-icon.svg" alt="" class="profitability__icon">
-                            <div class="profitability__text">
-                                <span class="profitability__value">40%</span>
-                                <span class="profitability__text">
+        </div>
+    </section>
+    <section class="section container">
+        <div class="characteristics">
+            <h2 class="characteristics__title">
+                Основные характеристики объектов Light Industrial
+            </h2>
+            <div class="characteristics__grid">
+                <ul class="characteristics__list">
+                    <li class="characteristics__item">
+                        <img src="public/icons/characteristics/building-icon.svg" alt="" class="characteristics__icon">
+                        <span>Современное новое здание <strong>не старше 15 лет</strong></span>
+                    </li>
+                    <li class="characteristics__item">
+                        <img src="public/icons/characteristics/ceiling-height-icon.svg" alt="" class="characteristics__icon">
+                        <span>Высота потолка — <strong>8 метров</strong></span>
+                    </li>
+                    <li class="characteristics__item">
+                        <img src="public/icons/characteristics/floor-icon.svg" alt="" class="characteristics__icon">
+                        <span>Бетонный пол с антипылевым покрытием</span>
+                    </li>
+                    <li class="characteristics__item">
+                        <img src="public/icons/characteristics/floor-load-icon.svg" alt="" class="characteristics__icon">
+                        <span>Нагрузка на пол — <strong>5 тонн/м²</strong></span>
+                    </li>
+                    <li class="characteristics__item">
+                        <img src="/public/icons/characteristics/dock-icon.svg" alt="" class="characteristics__icon">
+                        <span>1 док на предназначенный блок</span>
+                    </li>
+                    <li class="characteristics__item">
+                        <img src="public/icons/characteristics/office-icon.svg" alt="" class="characteristics__icon">
+                        <span>Наличие индивидуального АБК в блоке, офис <strong>50 кв.м.</strong></span>
+                    </li>
+                    <li class="characteristics__item">
+                        <img src="public/icons/characteristics/park-icon.svg" alt="" class="characteristics__icon">
+                        <span>Не менее <strong>2 парковочных мест</strong> на блок</span>
+                    </li>
+                </ul>
+
+                <div class="characteristics__map">
+                    <img src="./public/images/characteristics/map-image.jpg" alt="Планировка" class="characteristics__plan">
+                </div>
+
+                <div class="characteristics__map">
+                    <img src="public/images/characteristics/layout-image.jpg" alt="План блоков" class="characteristics__plan">
+                </div>
+
+                <ul class="characteristics__list">
+                    <li class="characteristics__item">
+                        <img src="public/icons/characteristics/landscaping-icon.svg" alt="" class="characteristics__icon">
+                        <span>Благоустройство территории</span>
+                    </li>
+                    <li class="characteristics__item">
+                        <img src="public/icons/characteristics/electricity-icon.svg" alt="" class="characteristics__icon">
+                        <span>Электричество — <strong>20 Вт/кв.м.</strong> на блок</span>
+                    </li>
+                    <li class="characteristics__item">
+                        <img src="public/icons/characteristics/heating-system-icon.svg" alt="" class="characteristics__icon">
+                        <span>Система отопления</span>
+                    </li>
+                    <li class="characteristics__item">
+                        <img src="public/icons/characteristics/fire-extinguishing-system-icon.svg" alt="" class="characteristics__icon">
+                        <span>Система пожаротушения</span>
+                    </li>
+                    <li class="characteristics__item">
+                        <img src="public/icons/characteristics/cameras-icon.svg" alt="" class="characteristics__icon">
+                        <span>Охраняемая территория, доступ <strong>24/7</strong>, видеонаблюдение</span>
+                    </li>
+                    <li class="characteristics__item">
+                        <img src="public/icons/characteristics/managemant-company-icon.svg" alt="" class="characteristics__icon">
+                        <span>Управляющая компания</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="section section--grey">
+        <div class="section__body investors container">
+            <h2 class="profitability__title h1">
+                Инвесторам
+            </h2>
+            <div class="profitability">
+                <header class="profitability__header">
+                    <h3 class="profitability__subtitle">
+                        Доходность инвестиций в Light Industrial
+                    </h3>
+                    <div class="profitability__description">
+                        <p>
+                            На фоне дефицита свободного предложения цена квадратного метра в проектах Light Industrial только за прошедший год выросла в среднем на 18%, а за последние три года - более чем на 60%.
+                        </p>
+                    </div>
+                </header>
+                <div class="profitability__grid">
+                    <div class="profitability__card profitability__card--growth">
+                        <img src="public/icons/profitability/growth-icon.svg" alt="" class="profitability__icon">
+                        <div class="profitability__text">
+                            <span class="profitability__value">40%</span>
+                            <span class="profitability__text">
                                 Рост стоимости на этапе строительства,<br>
                                 год к году
                             </span>
-                            </div>
                         </div>
-                        <div class="profitability__card profitability__card--post">
-                            <img src="public/icons/profitability/post-icon.svg" alt="" class="profitability__icon">
-                            <div class="profitability__text">
-                                <span class="profitability__value">от 8%</span>
-                                <span class="profitability__text">
+                    </div>
+                    <div class="profitability__card profitability__card--post">
+                        <img src="public/icons/profitability/post-icon.svg" alt="" class="profitability__icon">
+                        <div class="profitability__text">
+                            <span class="profitability__value">от 8%</span>
+                            <span class="profitability__text">
                                 Рост стоимости после ввода,<br>
                                 год к году
                             </span>
-                            </div>
                         </div>
-                        <div class="profitability__card profitability__card--rent">
-                            <img src="public/icons/profitability/rent.svg" alt="" class="profitability__icon">
-                            <div class="profitability__text">
-                                <span class="profitability__value">до 15%</span>
-                                <span class="profitability__text">
+                    </div>
+                    <div class="profitability__card profitability__card--rent">
+                        <img src="public/icons/profitability/rent.svg" alt="" class="profitability__icon">
+                        <div class="profitability__text">
+                            <span class="profitability__value">до 15%</span>
+                            <span class="profitability__text">
                                     В год — доходность от аренды
                                 </span>
-                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="pricing">
-                    <div class="pricing__body">
-                        <h3 class="pricing__title">
-                            Стоимость продажи и ставки аренды объектов Light Industrial, руб./м2
-                        </h3>
-                        <div class="pricing__legend">
-                            <div class="pricing__legend-item">
-                                <img src="public/icons/pricing/purple-line-icon.svg" alt="" class="market-rates__icon">
-                                <span>Стоимость продажи</span>
-                            </div>
-                            <div class="pricing__legend-item">
-                                <img src="public/icons/pricing/blue-line-icon.svg" alt="" class="market-rates__icon">
-                                <span>Ставки аренды</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="pricing__image-wrapper">
-                        <img src="public/images/pricing/schedule-image.jpg" alt="" class="pricing__image">
-                        <div class="pricing__decoration">
-                            <span class="pricing__square pricing__square--dark"></span>
-                            <span class="pricing__square pricing__square--light"></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="applicability">
-                    <h3 class="applicability__title">
-                        Данный формат подходит в случае:
-                    </h3>
-                    <ul class="applicability__list">
-                        <li class="applicability__item">
-                            <img src="public/icons/applicability/shape-icon.svg" alt="" class="applicability__icon">
-                            <span class="applicability__text">Когда форма вашего земельного участка является неправильной, либо участок накрывают санитарно-защитные зоны</span>
-                        </li>
-                        <li class="applicability__item">
-                            <img src="public/icons/applicability/small-area-icon.svg" alt="" class="applicability__icon">
-                            <span class="applicability__text">Если у вашего земельного участка небольшая площадь, либо ваш объект является остатком от готовых зданий в проекте</span>
-                        </li>
-                        <li class="applicability__item">
-                            <img src="public/icons/applicability/investment-icon.svg" alt="" class="applicability__icon">
-                            <span class="applicability__text">Если вам важен комфортный объем инвестиций, так как в данный формат можно инвестировать этапами</span>
-                        </li>
-                        <li class="applicability__item">
-                            <img src="public/icons/applicability/liquidity-icon.svg" alt="" class="applicability__icon">
-                            <span class="applicability__text">Если вам необходим ликвидный актив</span>
-                        </li>
-                        <li class="applicability__item">
-                            <img src="public/icons/applicability/combine-icon.svg" alt="" class="applicability__icon">
-                            <span class="applicability__text">Если вам необходимо комбинировать свой объект с другими объектами: складами, ТРК и даже с жилыми кварталами</span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="investors__background">
-                    <img class="investors__background-image" src="./public/images/investors/investors-background.jpg" alt="">
-                </div>
-                <div class="benefits">
-                    <h3 class="benefits__title">
-                        Почему инвестору стоит обратиться в IBC Global
-                    </h3>
-                    <ul class="benefits__list">
-                        <li class="benefits__item">
-                            <img src="./public/icons/benefits/check-mark-icon.svg" alt="" class="benefits__icon">
-                            <span class="benefits__text">Мы накопили большой опыт успешной деятельности в сегменте производственно-складской недвижимости</span>
-                        </li>
-                        <li class="benefits__item">
-                            <img src="./public/icons/benefits/check-mark-icon.svg" alt="" class="benefits__icon">
-                            <span class="benefits__text">Мы поможем вам разработать концепцию проекта и построить то, что продается, а не продавать то, что построено</span>
-                        </li>
-                        <li class="benefits__item">
-                            <img src="./public/icons/benefits/check-mark-icon.svg" alt="" class="benefits__icon">
-                            <span class="benefits__text">Мы отлично изучили регионы и специфику спроса и реализации проектов в них</span>
-                        </li>
-                        <li class="benefits__item">
-                            <img src="./public/icons/benefits/check-mark-icon.svg" alt="" class="benefits__icon">
-                            <span class="benefits__text">Мы предложим вам квалифицированных подрядчиков на всех этапах проекта</span>
-                        </li>
-                        <li class="benefits__item">
-                            <img src="./public/icons/benefits/check-mark-icon.svg" alt="" class="benefits__icon">
-                            <span class="benefits__text">Мы поможем вам получить банковское финансирование</span>
-                        </li>
-                        <li class="benefits__item">
-                            <img src="./public/icons/benefits/check-mark-icon.svg" alt="" class="benefits__icon">
-                            <span class="benefits__text">Мы найдем покупателей и арендаторов на ваш объект</span>
-                        </li>
-                    </ul>
                 </div>
             </div>
-        </section>
-        <section class="section section--grey">
-            <div class="section__body clients container">
-                <h2 class="clients__title h1">
-                    Клиентам
-                </h2>
-                <div class="benefits-clients">
-                    <h3 class="benefits-clients__title">
-                        Преимущества формата Light Industrial для клиентов
+            <div class="pricing">
+                <div class="pricing__body">
+                    <h3 class="pricing__title">
+                        Стоимость продажи и ставки аренды объектов Light Industrial, руб./м2
                     </h3>
-                    <ul class="benefits-clients__list">
-                        <li class="benefits-clients__item">
-                            <div class="benefits-clients__card">
-                                <h4 class="benefits-clients__card-title">
-                                    Многофункциональность
-                                </h4>
-                                <div class="benefits-clients__card-description">
-                                    <p>
-                                        Эти склады могут использоваться не только для хранения, но и для обработки и сборки товаров, производства, офисной части, шоу–рума  и пространства свободного назначения. Гибкость планировки позволяет быстро изменять производственные линии, назначение помещений и оптимизировать логистику и сокращать время обработки заказов.
-                                    </p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="benefits-clients__card">
-                                <h4 class="benefits-clients__card-title">
-                                    Развитая инфраструктура
-                                </h4>
-                                <div class="benefits-clients__card-description">
-                                    <p>
-                                        Благодаря меньшим затратам на оборудование и эксплуатацию, склады данного типа могут быть более экономичными в содержании. При этом у клиента в распоряжении комфортное и качественное пространство с зонами для отдыха, проведения встреч, места для парковки, кафе и другие необходимые сервисы.</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="benefits-clients__card">
-                                <h4 class="benefits-clients__card-title">
-                                    Многофункциональность
-                                </h4>
-                                <div class="benefits-clients__card-description">
-                                    <p>
-                                        Эти склады могут использоваться не только для хранения, но и для обработки и сборки товаров, производства, офисной части, шоу–рума  и пространства свободного назначения. Гибкость планировки позволяет быстро изменять производственные линии, назначение помещений и оптимизировать логистику и сокращать время обработки заказов.
-                                    </p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="benefits-clients__card">
-                                <h4 class="benefits-clients__card-title">
-                                    Многофункциональность
-                                </h4>
-                                <div class="benefits-clients__card-description">
-                                    <p>
-                                        Эти склады могут использоваться не только для хранения, но и для обработки и сборки товаров, производства, офисной части, шоу–рума  и пространства свободного назначения. Гибкость планировки позволяет быстро изменять производственные линии, назначение помещений и оптимизировать логистику и сокращать время обработки заказов.
-                                    </p>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="demand-structure">
-                    <div class="demand-structure__body">
-                        <h3 class="demand-structure__title">
-                            Структура спроса арендатора/покупателя
-                        </h3>
-                    </div>
-                    <div class="demand-structure__left">
-                        <div class="demand-structure__image-wrapper">
-                            <img src="public/icons/demand-structure/structure-image.svg" alt="" class="demand-structure__image">
+                    <div class="pricing__legend">
+                        <div class="pricing__legend-item">
+                            <img src="public/icons/pricing/purple-line-icon.svg" alt="" class="market-rates__icon">
+                            <span>Стоимость продажи</span>
                         </div>
-                        <div class="demand-structure__decoration">
-                            <span class="demand-structure__square demand-structure__square--dark"></span>
-                            <span class="demand-structure__square demand-structure__square--light"></span>
+                        <div class="pricing__legend-item">
+                            <img src="public/icons/pricing/blue-line-icon.svg" alt="" class="market-rates__icon">
+                            <span>Ставки аренды</span>
                         </div>
                     </div>
                 </div>
-                <div class="benefits">
-                    <h3 class="benefits__title">
-                        Почему клиенту стоит обратиться в IBC Global
-                    </h3>
-                    <ul class="benefits__list">
-                        <li class="benefits__item">
-                            <img src="./public/icons/benefits/check-mark-icon_blue.svg" alt="" class="benefits__icon">
-                            <span class="benefits__text">Мы накопили большой опыт успешной деятельности в сегменте производственно-складской недвижимости</span>
-                        </li>
-                        <li class="benefits__item">
-                            <img src="./public/icons/benefits/check-mark-icon_blue.svg" alt="" class="benefits__icon">
-                            <span class="benefits__text">Мы поможем вам разработать концепцию проекта и построить то, что продается, а не продавать то, что построено</span>
-                        </li>
-                        <li class="benefits__item">
-                            <img src="./public/icons/benefits/check-mark-icon_blue.svg" alt="" class="benefits__icon">
-                            <span class="benefits__text">Мы отлично изучили регионы и специфику спроса и реализации проектов в них</span>
-                        </li>
-                        <li class="benefits__item">
-                            <img src="./public/icons/benefits/check-mark-icon_blue.svg" alt="" class="benefits__icon">
-                            <span class="benefits__text">Мы предложим вам квалифицированных подрядчиков на всех этапах проекта</span>
-                        </li>
-                        <li class="benefits__item">
-                            <img src="./public/icons/benefits/check-mark-icon_blue.svg" alt="" class="benefits__icon">
-                            <span class="benefits__text">Мы поможем вам получить банковское финансирование</span>
-                        </li>
-                        <li class="benefits__item">
-                            <img src="./public/icons/benefits/check-mark-icon_blue.svg" alt="" class="benefits__icon">
-                            <span class="benefits__text">Мы найдем покупателей и арендаторов на ваш объект</span>
-                        </li>
-                    </ul>
+                <div class="pricing__image-wrapper">
+                    <img src="public/images/pricing/schedule-image.jpg" alt="" class="pricing__image">
+                    <div class="pricing__decoration">
+                        <span class="pricing__square pricing__square--dark"></span>
+                        <span class="pricing__square pricing__square--light"></span>
+                    </div>
                 </div>
             </div>
-        </section>
-        <section class="section">
-            <div class="section__body our-objects container">
-                <h2 class="our-objects__title">
-                    Наши объекты
-                </h2>
-                <div class="our-objects__slider">
-                    <ul class="our-objects__slider-list">
-                        <li class="our-objects__slider-item">
-                            <div class="our-objects__slide">
-                                <h3 class="our-objects__slide-title">
-                                    Челябинская область, г. Копейск, ул. Лихачева, 21А/1
-                                </h3>
-                                <div class="our-objects__slide-body">
-                                    <div class="our-objects__slide-left">
-                                        <img src="./public/images/our-objects/our-objects-image_1.jpg" alt="" class="our-objects__image">
-                                    </div>
-                                    <div class="our-objects__slide-right">
-                                        <ul class="our-objects__slide-list">
-                                            <li class="our-objects__slide-item">
-                                                <img src="./public/icons/our-objects/tick-circle-icon.svg" alt="" class="our-objects__slide-icon">
-                                                <span class="our-objects__slide-text">
+            <div class="applicability">
+                <h3 class="applicability__title">
+                    Данный формат подходит в случае:
+                </h3>
+                <ul class="applicability__list">
+                    <li class="applicability__item">
+                        <img src="public/icons/applicability/shape-icon.svg" alt="" class="applicability__icon">
+                        <span class="applicability__text">Когда форма вашего земельного участка является неправильной, либо участок накрывают санитарно-защитные зоны</span>
+                    </li>
+                    <li class="applicability__item">
+                        <img src="public/icons/applicability/small-area-icon.svg" alt="" class="applicability__icon">
+                        <span class="applicability__text">Если у вашего земельного участка небольшая площадь, либо ваш объект является остатком от готовых зданий в проекте</span>
+                    </li>
+                    <li class="applicability__item">
+                        <img src="public/icons/applicability/investment-icon.svg" alt="" class="applicability__icon">
+                        <span class="applicability__text">Если вам важен комфортный объем инвестиций, так как в данный формат можно инвестировать этапами</span>
+                    </li>
+                    <li class="applicability__item">
+                        <img src="public/icons/applicability/liquidity-icon.svg" alt="" class="applicability__icon">
+                        <span class="applicability__text">Если вам необходим ликвидный актив</span>
+                    </li>
+                    <li class="applicability__item">
+                        <img src="public/icons/applicability/combine-icon.svg" alt="" class="applicability__icon">
+                        <span class="applicability__text">Если вам необходимо комбинировать свой объект с другими объектами: складами, ТРК и даже с жилыми кварталами</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="investors__background">
+                <img class="investors__background-image" src="./public/images/investors/investors-background.jpg" alt="">
+            </div>
+            <div class="benefits">
+                <h3 class="benefits__title">
+                    Почему инвестору стоит обратиться в IBC Global
+                </h3>
+                <ul class="benefits__list">
+                    <li class="benefits__item">
+                        <img src="./public/icons/benefits/check-mark-icon.svg" alt="" class="benefits__icon">
+                        <span class="benefits__text">Мы накопили большой опыт успешной деятельности в сегменте производственно-складской недвижимости</span>
+                    </li>
+                    <li class="benefits__item">
+                        <img src="./public/icons/benefits/check-mark-icon.svg" alt="" class="benefits__icon">
+                        <span class="benefits__text">Мы поможем вам разработать концепцию проекта и построить то, что продается, а не продавать то, что построено</span>
+                    </li>
+                    <li class="benefits__item">
+                        <img src="./public/icons/benefits/check-mark-icon.svg" alt="" class="benefits__icon">
+                        <span class="benefits__text">Мы отлично изучили регионы и специфику спроса и реализации проектов в них</span>
+                    </li>
+                    <li class="benefits__item">
+                        <img src="./public/icons/benefits/check-mark-icon.svg" alt="" class="benefits__icon">
+                        <span class="benefits__text">Мы предложим вам квалифицированных подрядчиков на всех этапах проекта</span>
+                    </li>
+                    <li class="benefits__item">
+                        <img src="./public/icons/benefits/check-mark-icon.svg" alt="" class="benefits__icon">
+                        <span class="benefits__text">Мы поможем вам получить банковское финансирование</span>
+                    </li>
+                    <li class="benefits__item">
+                        <img src="./public/icons/benefits/check-mark-icon.svg" alt="" class="benefits__icon">
+                        <span class="benefits__text">Мы найдем покупателей и арендаторов на ваш объект</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="section section--grey">
+        <div class="section__body clients container">
+            <h2 class="clients__title h1">
+                Клиентам
+            </h2>
+            <div class="benefits-clients">
+                <h3 class="benefits-clients__title">
+                    Преимущества формата Light Industrial для клиентов
+                </h3>
+                <ul class="benefits-clients__list">
+                    <li class="benefits-clients__item">
+                        <div class="benefits-clients__card">
+                            <h4 class="benefits-clients__card-title">
+                                Многофункциональность
+                            </h4>
+                            <div class="benefits-clients__card-description">
+                                <p>
+                                    Эти склады могут использоваться не только для хранения, но и для обработки и сборки товаров, производства, офисной части, шоу–рума  и пространства свободного назначения. Гибкость планировки позволяет быстро изменять производственные линии, назначение помещений и оптимизировать логистику и сокращать время обработки заказов.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="benefits-clients__card">
+                            <h4 class="benefits-clients__card-title">
+                                Развитая инфраструктура
+                            </h4>
+                            <div class="benefits-clients__card-description">
+                                <p>
+                                    Благодаря меньшим затратам на оборудование и эксплуатацию, склады данного типа могут быть более экономичными в содержании. При этом у клиента в распоряжении комфортное и качественное пространство с зонами для отдыха, проведения встреч, места для парковки, кафе и другие необходимые сервисы.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="benefits-clients__card">
+                            <h4 class="benefits-clients__card-title">
+                                Многофункциональность
+                            </h4>
+                            <div class="benefits-clients__card-description">
+                                <p>
+                                    Эти склады могут использоваться не только для хранения, но и для обработки и сборки товаров, производства, офисной части, шоу–рума  и пространства свободного назначения. Гибкость планировки позволяет быстро изменять производственные линии, назначение помещений и оптимизировать логистику и сокращать время обработки заказов.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="benefits-clients__card">
+                            <h4 class="benefits-clients__card-title">
+                                Многофункциональность
+                            </h4>
+                            <div class="benefits-clients__card-description">
+                                <p>
+                                    Эти склады могут использоваться не только для хранения, но и для обработки и сборки товаров, производства, офисной части, шоу–рума  и пространства свободного назначения. Гибкость планировки позволяет быстро изменять производственные линии, назначение помещений и оптимизировать логистику и сокращать время обработки заказов.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="demand-structure">
+                <div class="demand-structure__body">
+                    <h3 class="demand-structure__title">
+                        Структура спроса арендатора/покупателя
+                    </h3>
+                </div>
+                <div class="demand-structure__left">
+                    <div class="demand-structure__image-wrapper">
+                        <img src="public/icons/demand-structure/structure-image.svg" alt="" class="demand-structure__image">
+                    </div>
+                    <div class="demand-structure__decoration">
+                        <span class="demand-structure__square demand-structure__square--dark"></span>
+                        <span class="demand-structure__square demand-structure__square--light"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="benefits">
+                <h3 class="benefits__title">
+                    Почему клиенту стоит обратиться в IBC Global
+                </h3>
+                <ul class="benefits__list">
+                    <li class="benefits__item">
+                        <img src="./public/icons/benefits/check-mark-icon_blue.svg" alt="" class="benefits__icon">
+                        <span class="benefits__text">Мы накопили большой опыт успешной деятельности в сегменте производственно-складской недвижимости</span>
+                    </li>
+                    <li class="benefits__item">
+                        <img src="./public/icons/benefits/check-mark-icon_blue.svg" alt="" class="benefits__icon">
+                        <span class="benefits__text">Мы поможем вам разработать концепцию проекта и построить то, что продается, а не продавать то, что построено</span>
+                    </li>
+                    <li class="benefits__item">
+                        <img src="./public/icons/benefits/check-mark-icon_blue.svg" alt="" class="benefits__icon">
+                        <span class="benefits__text">Мы отлично изучили регионы и специфику спроса и реализации проектов в них</span>
+                    </li>
+                    <li class="benefits__item">
+                        <img src="./public/icons/benefits/check-mark-icon_blue.svg" alt="" class="benefits__icon">
+                        <span class="benefits__text">Мы предложим вам квалифицированных подрядчиков на всех этапах проекта</span>
+                    </li>
+                    <li class="benefits__item">
+                        <img src="./public/icons/benefits/check-mark-icon_blue.svg" alt="" class="benefits__icon">
+                        <span class="benefits__text">Мы поможем вам получить банковское финансирование</span>
+                    </li>
+                    <li class="benefits__item">
+                        <img src="./public/icons/benefits/check-mark-icon_blue.svg" alt="" class="benefits__icon">
+                        <span class="benefits__text">Мы найдем покупателей и арендаторов на ваш объект</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="section__body our-objects container">
+            <h2 class="our-objects__title">
+                Наши объекты
+            </h2>
+            <div class="our-objects__slider our-objects-swiper">
+                <ul class="our-objects__slider-list swiper-wrapper">
+                    <li class="our-objects__slider-item swiper-slide">
+                        <div class="our-objects__slide">
+                            <h3 class="our-objects__slide-title">
+                                Челябинская область, г. Копейск, ул. Лихачева, 21А/1
+                            </h3>
+                            <div class="our-objects__slide-body">
+                                <div class="our-objects__slide-left">
+                                    <img src="./public/images/our-objects/our-objects-image_1.jpg" alt="" class="our-objects__image">
+                                </div>
+                                <div class="our-objects__slide-right">
+                                    <ul class="our-objects__slide-list">
+                                        <li class="our-objects__slide-item">
+                                            <img src="./public/icons/our-objects/tick-circle-icon.svg" alt="" class="our-objects__slide-icon">
+                                            <span class="our-objects__slide-text">
                                             Сданo в мартe 2025 гoдa: 485 м² и 872 м², можно aрeндoвать oтдельно или oбъединить дo 1357 м². Офиcы 160 м², гoтовы к работe
                                         </span>
-                                            </li>
-                                            <li class="our-objects__slide-item">
-                                                <img src="./public/icons/our-objects/tick-circle-icon.svg" alt="" class="our-objects__slide-icon">
-                                                <span class="our-objects__slide-text">
+                                        </li>
+                                        <li class="our-objects__slide-item">
+                                            <img src="./public/icons/our-objects/tick-circle-icon.svg" alt="" class="our-objects__slide-icon">
+                                            <span class="our-objects__slide-text">
                                             Нагрузка на пол 8 тонн/м², выдерживает тяжелую технику и стеллажи. 
                                         </span>
-                                            </li>
-                                            <li class="our-objects__slide-item">
-                                                <img src="./public/icons/our-objects/tick-circle-icon.svg" alt="" class="our-objects__slide-icon">
-                                                <span class="our-objects__slide-text">
+                                        </li>
+                                        <li class="our-objects__slide-item">
+                                            <img src="./public/icons/our-objects/tick-circle-icon.svg" alt="" class="our-objects__slide-icon">
+                                            <span class="our-objects__slide-text">
                                             Высота потолков 6,7 метра, пространство для многоуровневого хранения. 
                                         </span>
-                                            </li>
-                                            <li class="our-objects__slide-item">
-                                                <img src="./public/icons/our-objects/tick-circle-icon.svg" alt="" class="our-objects__slide-icon">
-                                                <span class="our-objects__slide-text">
+                                        </li>
+                                        <li class="our-objects__slide-item">
+                                            <img src="./public/icons/our-objects/tick-circle-icon.svg" alt="" class="our-objects__slide-icon">
+                                            <span class="our-objects__slide-text">
                                             Температурный режим до + 20 °С
                                         </span>
-                                            </li>
-                                            <li class="our-objects__slide-item">
-                                                <img src="./public/icons/our-objects/tick-circle-icon.svg" alt="" class="our-objects__slide-icon">
-                                                <span class="our-objects__slide-text">
+                                        </li>
+                                        <li class="our-objects__slide-item">
+                                            <img src="./public/icons/our-objects/tick-circle-icon.svg" alt="" class="our-objects__slide-icon">
+                                            <span class="our-objects__slide-text">
                                             Коммуникации: электричество 200 кВт, вода, собственная котельная, комфортные условия для персонала и чувствительных грузов. Современные здания, безопасность, новые сети, удобные подъезды.
                                         </span>
-                                            </li>
-                                            <li class="our-objects__slide-item">
-                                                <img src="./public/icons/our-objects/tick-circle-icon.svg" alt="" class="our-objects__slide-icon">
-                                                <span class="our-objects__slide-text">Гибкая планировка: объединяйте помещения под свои задачи</span>
-                                            </li>
-                                            <li class="our-objects__slide-item">
-                                                <img src="./public/icons/our-objects/tick-circle-icon.svg" alt="" class="our-objects__slide-icon">
-                                                <span class="our-objects__slide-text">Безопасность: круглосуточная охрана территории и пропускной режим на КПП и видеонаблюдение</span>
-                                            </li>
-                                        </ul>
-                                        <button class="our-objects__slide-button button button--blue">
-                                            Оставить заявку
-                                        </button>
-                                    </div>
+                                        </li>
+                                        <li class="our-objects__slide-item">
+                                            <img src="./public/icons/our-objects/tick-circle-icon.svg" alt="" class="our-objects__slide-icon">
+                                            <span class="our-objects__slide-text">Гибкая планировка: объединяйте помещения под свои задачи</span>
+                                        </li>
+                                        <li class="our-objects__slide-item">
+                                            <img src="./public/icons/our-objects/tick-circle-icon.svg" alt="" class="our-objects__slide-icon">
+                                            <span class="our-objects__slide-text">Безопасность: круглосуточная охрана территории и пропускной режим на КПП и видеонаблюдение</span>
+                                        </li>
+                                    </ul>
+                                    <button class="our-objects__slide-button button button--blue">
+                                        Оставить заявку
+                                    </button>
                                 </div>
                             </div>
-                            <div class="our-objects__pagination pagination">
-                                <ul class="pagination__list">
-                                    <li class="pagination__item">
-                                        <button
-                                                class="pagination__button is-current"
-                                                type="button"
-                                        >
-                                            <span class="visually-hidden">Первый слайд</span>
-                                        </button>
-                                    </li>
-                                    <li class="pagination__item">
-                                        <button
-                                                class="pagination__button"
-                                                type="button"
-                                        >
-                                            <span class="visually-hidden">Второй слайд</span>
-                                        </button>
-                                    </li>
-                                    <li class="pagination__item">
-                                        <button
-                                                class="pagination__button"
-                                                type="button"
-                                        >
-                                            <span class="visually-hidden">Третий слайд</span>
-                                        </button>
-                                    </li>
-                                    <li class="pagination__item">
-                                        <button
-                                                class="pagination__button"
-                                                type="button"
-                                        >
-                                            <span class="visually-hidden">Четвёртый слайд</span>
-                                        </button>
-                                    </li>
-                                    <li class="pagination__item">
-                                        <button
-                                                class="pagination__button"
-                                                type="button"
-                                        >
-                                            <span class="visually-hidden">Пятый слайд</span>
-                                        </button>
-                                    </li>
-                                    <li class="pagination__item">
-                                        <button
-                                                class="pagination__button"
-                                                type="button"
-                                        >
-                                            <span class="visually-hidden">Шестой слайд</span>
-                                        </button>
-                                    </li>
-                                </ul>
+                        </div>
+
+                    </li>
+                    <li class="our-objects__slider-item swiper-slide">
+                        <div class="our-objects__slide">
+                            <h3 class="our-objects__slide-title">
+                                Челябинская область, г. Копейск, Второй объект
+                            </h3>
+                            <div class="our-objects__slide-body">
+                                <div class="our-objects__slide-left">
+                                    <img src="./public/images/hero/main-slider-background_2.jpg" alt="" class="our-objects__image">
+                                </div>
+                                <div class="our-objects__slide-right">
+                                    <ul class="our-objects__slide-list">
+                                        <li class="our-objects__slide-item">
+                                            <img src="./public/icons/our-objects/tick-circle-icon.svg" alt="" class="our-objects__slide-icon">
+                                            <span class="our-objects__slide-text">
+                                            Сданo в мартe 2025 гoдa: 485 м² и 872 м², можно aрeндoвать oтдельно или oбъединить дo 1357 м². Офиcы 160 м², гoтовы к работe
+                                        </span>
+                                        </li>
+                                        <li class="our-objects__slide-item">
+                                            <img src="./public/icons/our-objects/tick-circle-icon.svg" alt="" class="our-objects__slide-icon">
+                                            <span class="our-objects__slide-text">
+                                            Нагрузка на пол 8 тонн/м², выдерживает тяжелую технику и стеллажи. 
+                                        </span>
+                                        </li>
+                                        <li class="our-objects__slide-item">
+                                            <img src="./public/icons/our-objects/tick-circle-icon.svg" alt="" class="our-objects__slide-icon">
+                                            <span class="our-objects__slide-text">
+                                            Высота потолков 6,7 метра, пространство для многоуровневого хранения. 
+                                        </span>
+                                        </li>
+                                        <li class="our-objects__slide-item">
+                                            <img src="./public/icons/our-objects/tick-circle-icon.svg" alt="" class="our-objects__slide-icon">
+                                            <span class="our-objects__slide-text">
+                                            Температурный режим до + 20 °С
+                                        </span>
+                                        </li>
+                                        <li class="our-objects__slide-item">
+                                            <img src="./public/icons/our-objects/tick-circle-icon.svg" alt="" class="our-objects__slide-icon">
+                                            <span class="our-objects__slide-text">
+                                            Коммуникации: электричество 200 кВт, вода, собственная котельная, комфортные условия для персонала и чувствительных грузов. Современные здания, безопасность, новые сети, удобные подъезды.
+                                        </span>
+                                        </li>
+                                        <li class="our-objects__slide-item">
+                                            <img src="./public/icons/our-objects/tick-circle-icon.svg" alt="" class="our-objects__slide-icon">
+                                            <span class="our-objects__slide-text">Гибкая планировка: объединяйте помещения под свои задачи</span>
+                                        </li>
+                                        <li class="our-objects__slide-item">
+                                            <img src="./public/icons/our-objects/tick-circle-icon.svg" alt="" class="our-objects__slide-icon">
+                                            <span class="our-objects__slide-text">Безопасность: круглосуточная охрана территории и пропускной режим на КПП и видеонаблюдение</span>
+                                        </li>
+                                    </ul>
+                                    <button class="our-objects__slide-button button button--blue">
+                                        Оставить заявку
+                                    </button>
+                                </div>
                             </div>
-                        </li>
-                    </ul>
+                        </div>
+
+                    </li>
+                </ul>
+
+                <div class="our-objects__pagination pagination" data-js-pagination>
+
                 </div>
             </div>
-        </section>
-        <section class="section">
-            <div class="section__body contacts container">
-                <h2 class="contacts__title h3">
-                    Контакты
-                </h2>
-                <ul class="contacts__list">
-                    <li class="contacts__item">
-                        <article class="contact-card">
-                            <img src="./public/images/contacts/contact_1.jpg" alt="" class="contact-card__image">
-                            <div class="contact-card__body">
-                                <h4 class="contact-card__full-name h5">
-                                    Станислав Ахмедзянов
-                                </h4>
-                                <div class="contact-card__description">
+        </div>
+    </section>
+    <section class="section">
+        <div class="section__body contacts container">
+            <h2 class="contacts__title h3">
+                Контакты
+            </h2>
+            <ul class="contacts__list">
+                <li class="contacts__item">
+                    <article class="contact-card">
+                        <img src="./public/images/contacts/contact_1.jpg" alt="" class="contact-card__image">
+                        <div class="contact-card__body">
+                            <h4 class="contact-card__full-name h5">
+                                Станислав Ахмедзянов
+                            </h4>
+                            <div class="contact-card__description">
                                     <span class="contact-card__job-title">
                                     Управляющий партнер IBC Global
                                 </span>
-                                    <div class="contact-card__contacts">
-                                        <div class="contact-card__email">
-                                            <img src="./public/icons/contacts/email-icon_small.svg" alt="" class="contact-card__email-icon">
-                                            <a class="contact-card__email-text contact-card__link" href="mailto:SA@ibc-global.pro">SA@ibc-global.pro</a>
-                                        </div>
-                                        <div class="contact-card__phone">
-                                            <img src="./public/icons/contacts/call-icon_small.svg" alt="" class="contact-card__phone-icon">
-                                            <a class="contact-card__phone-text contact-card__link" href="tel:+79043048382">+7 904 304-83-82</a>
-                                        </div>
+                                <div class="contact-card__contacts">
+                                    <div class="contact-card__email">
+                                        <img src="./public/icons/contacts/email-icon_small.svg" alt="" class="contact-card__email-icon">
+                                        <a class="contact-card__email-text contact-card__link" href="mailto:SA@ibc-global.pro">SA@ibc-global.pro</a>
+                                    </div>
+                                    <div class="contact-card__phone">
+                                        <img src="./public/icons/contacts/call-icon_small.svg" alt="" class="contact-card__phone-icon">
+                                        <a class="contact-card__phone-text contact-card__link" href="tel:+79043048382">+7 904 304-83-82</a>
                                     </div>
                                 </div>
                             </div>
-                        </article>
-                    </li>
-                    <li class="contacts__item">
-                        <article class="contact-card">
-                            <img src="./public/images/contacts/contact_2.jpg" alt="" class="contact-card__image">
-                            <div class="contact-card__body">
-                                <h4 class="contact-card__full-name h5">
-                                    Юлиана Хронюк
-                                </h4>
-                                <div class="contact-card__description">
+                        </div>
+                    </article>
+                </li>
+                <li class="contacts__item">
+                    <article class="contact-card">
+                        <img src="./public/images/contacts/contact_2.jpg" alt="" class="contact-card__image">
+                        <div class="contact-card__body">
+                            <h4 class="contact-card__full-name h5">
+                                Юлиана Хронюк
+                            </h4>
+                            <div class="contact-card__description">
                                     <span class="contact-card__job-title">
                                     Директор по развитию, департамент Light Industrial
                                 </span>
-                                    <div class="contact-card__contacts">
-                                        <div class="contact-card__email">
-                                            <img src="./public/icons/contacts/email-icon_small.svg" alt="" class="contact-card__email-icon">
-                                            <a class="contact-card__email-text contact-card__link" href="mailto:yuliana.khronyuk@ibc-global.pro">yuliana.khronyuk@ibc-global.pro</a>
-                                        </div>
-                                        <div class="contact-card__phone">
-                                            <img src="./public/icons/contacts/call-icon_small.svg" alt="" class="contact-card__phone-icon">
-                                            <a class="contact-card__phone-text contact-card__link" href="tel:+79043048382">+7 904 304-83-82</a>
-                                        </div>
+                                <div class="contact-card__contacts">
+                                    <div class="contact-card__email">
+                                        <img src="./public/icons/contacts/email-icon_small.svg" alt="" class="contact-card__email-icon">
+                                        <a class="contact-card__email-text contact-card__link" href="mailto:yuliana.khronyuk@ibc-global.pro">yuliana.khronyuk@ibc-global.pro</a>
+                                    </div>
+                                    <div class="contact-card__phone">
+                                        <img src="./public/icons/contacts/call-icon_small.svg" alt="" class="contact-card__phone-icon">
+                                        <a class="contact-card__phone-text contact-card__link" href="tel:+79043048382">+7 904 304-83-82</a>
                                     </div>
                                 </div>
                             </div>
-                        </article>
-                    </li>
-                    <li class="contacts__item">
-                        <article class="contact-card">
-                            <img src="./public/images/contacts/contact_3.jpg" alt="" class="contact-card__image">
-                            <div class="contact-card__body">
-                                <h4 class="contact-card__full-name h5">
-                                    Станислав Родионов
-                                </h4>
-                                <div class="contact-card__description">
+                        </div>
+                    </article>
+                </li>
+                <li class="contacts__item">
+                    <article class="contact-card">
+                        <img src="./public/images/contacts/contact_3.jpg" alt="" class="contact-card__image">
+                        <div class="contact-card__body">
+                            <h4 class="contact-card__full-name h5">
+                                Станислав Родионов
+                            </h4>
+                            <div class="contact-card__description">
                                     <span class="contact-card__job-title">
                                     Старший консультант, руководитель проектов
                                 </span>
-                                    <div class="contact-card__contacts">
-                                        <div class="contact-card__email">
-                                            <img src="./public/icons/contacts/email-icon_small.svg" alt="" class="contact-card__email-icon">
-                                            <a class="contact-card__email-text contact-card__link" href="mailto:SA@ibc-global.pro">SA@ibc-global.pro</a>
-                                        </div>
-                                        <div class="contact-card__phone">
-                                            <img src="./public/icons/contacts/call-icon_small.svg" alt="" class="contact-card__phone-icon">
-                                            <a class="contact-card__phone-text contact-card__link" href="tel:+79058320515">+7 905 832-05-15</a>
-                                        </div>
+                                <div class="contact-card__contacts">
+                                    <div class="contact-card__email">
+                                        <img src="./public/icons/contacts/email-icon_small.svg" alt="" class="contact-card__email-icon">
+                                        <a class="contact-card__email-text contact-card__link" href="mailto:SA@ibc-global.pro">SA@ibc-global.pro</a>
+                                    </div>
+                                    <div class="contact-card__phone">
+                                        <img src="./public/icons/contacts/call-icon_small.svg" alt="" class="contact-card__phone-icon">
+                                        <a class="contact-card__phone-text contact-card__link" href="tel:+79058320515">+7 905 832-05-15</a>
                                     </div>
                                 </div>
                             </div>
-                        </article>
-                    </li>
-                    <li class="contacts__item">
-                        <article class="contact-card">
-                            <img src="./public/images/contacts/contact_4.jpg" alt="" class="contact-card__image">
-                            <div class="contact-card__body">
-                                <h4 class="contact-card__full-name h5">
-                                    Лев Турнов
-                                </h4>
-                                <div class="contact-card__description">
+                        </div>
+                    </article>
+                </li>
+                <li class="contacts__item">
+                    <article class="contact-card">
+                        <img src="./public/images/contacts/contact_4.jpg" alt="" class="contact-card__image">
+                        <div class="contact-card__body">
+                            <h4 class="contact-card__full-name h5">
+                                Лев Турнов
+                            </h4>
+                            <div class="contact-card__description">
                                     <span class="contact-card__job-title">
                                     Консультант, менеджер проектов
                                 </span>
-                                    <div class="contact-card__contacts">
-                                        <div class="contact-card__email">
-                                            <img src="./public/icons/contacts/email-icon_small.svg" alt="" class="contact-card__email-icon">
-                                            <a class="contact-card__email-text contact-card__link" href="mailto:lev.turnov@ibc-global.pro">lev.turnov@ibc-global.pro</a>
-                                        </div>
-                                        <div class="contact-card__phone">
-                                            <img src="./public/icons/contacts/call-icon_small.svg" alt="" class="contact-card__phone-icon">
-                                            <a class="contact-card__phone-text contact-card__link" href="tel:+79512453643">+7 951 245-36-43</a>
-                                        </div>
+                                <div class="contact-card__contacts">
+                                    <div class="contact-card__email">
+                                        <img src="./public/icons/contacts/email-icon_small.svg" alt="" class="contact-card__email-icon">
+                                        <a class="contact-card__email-text contact-card__link" href="mailto:lev.turnov@ibc-global.pro">lev.turnov@ibc-global.pro</a>
+                                    </div>
+                                    <div class="contact-card__phone">
+                                        <img src="./public/icons/contacts/call-icon_small.svg" alt="" class="contact-card__phone-icon">
+                                        <a class="contact-card__phone-text contact-card__link" href="tel:+79512453643">+7 951 245-36-43</a>
                                     </div>
                                 </div>
                             </div>
-                        </article>
-                    </li>
-                    <li class="contacts__item">
-                        <article class="contact-card">
-                            <img src="./public/images/contacts/contact_5.jpg" alt="" class="contact-card__image">
-                            <div class="contact-card__body">
-                                <h4 class="contact-card__full-name h5">
-                                    Ирина Кузьменко
-                                </h4>
-                                <div class="contact-card__description">
+                        </div>
+                    </article>
+                </li>
+                <li class="contacts__item">
+                    <article class="contact-card">
+                        <img src="./public/images/contacts/contact_5.jpg" alt="" class="contact-card__image">
+                        <div class="contact-card__body">
+                            <h4 class="contact-card__full-name h5">
+                                Ирина Кузьменко
+                            </h4>
+                            <div class="contact-card__description">
                                     <span class="contact-card__job-title">
                                     Старший консультант, руководитель проектов
                                 </span>
-                                    <div class="contact-card__contacts">
-                                        <div class="contact-card__email">
-                                            <img src="./public/icons/contacts/email-icon_small.svg" alt="" class="contact-card__email-icon">
-                                            <a class="contact-card__email-tex contact-card__link" href="mailto:irina.kuzmenko@ibc-global.pro">irina.kuzmenko@ibc-global.pro</a>
-                                        </div>
-                                        <div class="contact-card__phone">
-                                            <img src="./public/icons/contacts/call-icon_small.svg" alt="" class="contact-card__phone-icon">
-                                            <a class="contact-card__phone-text contact-card__link" href="tel:+79512453699">+7 951 245-36-99</a>
-                                        </div>
+                                <div class="contact-card__contacts">
+                                    <div class="contact-card__email">
+                                        <img src="./public/icons/contacts/email-icon_small.svg" alt="" class="contact-card__email-icon">
+                                        <a class="contact-card__email-tex contact-card__link" href="mailto:irina.kuzmenko@ibc-global.pro">irina.kuzmenko@ibc-global.pro</a>
+                                    </div>
+                                    <div class="contact-card__phone">
+                                        <img src="./public/icons/contacts/call-icon_small.svg" alt="" class="contact-card__phone-icon">
+                                        <a class="contact-card__phone-text contact-card__link" href="tel:+79512453699">+7 951 245-36-99</a>
                                     </div>
                                 </div>
                             </div>
-                        </article>
-                    </li>
-                </ul>
-                <div class="contacts__channel channel">
-                    <div class="channel__body">
-                        <h3 class="channel__title">
-                            Актуально Ежедневно Про склады
-                        </h3>
-                        <button class="channel__button button button--white">
-                            Телеграм-канал
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer class="footer">
-        <section class="footer__consultation consultation">
-            <div class="consultation__left">
-                <header class="consultation__header">
-                    <img src="./public/icons/consultation/email-icon_big.svg" alt="" class="consultation__icon">
-                    <h2 class="consultation__title">
-                        Получить консультацию
-                    </h2>
-                </header>
-            </div>
-            <form id="consultation-form" class="consultation__form form" action="#" method="post">
-                <div class="form__body">
-                    <div class="form__field field">
-                        <label class="field__label" for="name">Ваше имя</label>
-                        <input class="field__input" type="text" id="name" name="name" placeholder="John Doe" required />
-                    </div>
-
-                    <div class="form__field field">
-                        <label class="field__label" for="company">Компания</label>
-                        <input class="field__input" type="text" id="company" name="company" placeholder="XXXX" />
-                    </div>
-
-                    <div class="form__field field">
-                        <label class="field__label" for="email">Эл. почта</label>
-                        <input class="field__input" type="email" id="email" name="email" placeholder="john@mail.ru" required />
-                    </div>
-
-                    <div class="form__field field">
-                        <label class="field__label" for="phone">Телефон</label>
-                        <input class="field__input" type="tel" id="phone" name="phone" placeholder="+7 (926) ___ __ __" required />
-                    </div>
-
-                    <div class="form__field field">
-                        <label class="field__label" for="city">Город</label>
-                        <select class="field__input field__select" id="city" name="city" required>
-                            <option value="" disabled selected>Выберите город</option>
-                            <option value="moscow">Москва</option>
-                            <option value="spb">Санкт-Петербург</option>
-                            <option value="other">Другой</option>
-                        </select>
-                    </div>
-
-                    <div class="form__field field">
-                        <label class="field__label" for="status">Статус</label>
-                        <select class="field__input field__select" id="status" name="status" required>
-                            <option value="" disabled selected>Выберите статус</option>
-                            <option value="investor">Инвестор</option>
-                            <option value="company">Компания</option>
-                            <option value="other">Другое</option>
-                        </select>
-                    </div>
-
-                    <button class="form__submit button button--white" type="submit">Отправить запрос</button>
-                </div>
-            </form>
-        </section>
-        <section class="footer__contacts contact-us contact-us__container">
-            <h3 class="contact-us__title">Связаться с нами</h3>
-            <div class="contact-us__grid">
-                <div class="contact-us__column">
-                    <h4 class="contact-us__subtitle h6">Социальные сети</h4>
-                    <ul class="contact-us__list">
-                        <li class="contact-us__item">
-                            <a href="https://t.me/SkladAsia" target="_blank" rel="noopener noreferrer" class="contact-us__link">
-                                <img src="./public/images/contact-us/telegram-icon.svg" alt="Telegram" class="contact-us__item-icon">
-                                <span>SkladAsia</span>
-                            </a>
-                        </li>
-                        <li class="contact-us__item">
-                            <a href="https://youtube.com/IBCGlobal.Warehouse" target="_blank" rel="noopener noreferrer" class="contact-us__link">
-                                <img src="./public/images/contact-us/youtube-icon.svg" alt="YouTube" class="contact-us__item-icon">
-                                <span>IBCGlobal.Warehouse</span>
-                            </a>
-                        </li>
-                        <li class="contact-us__item">
-                            <a href="https://vk.com/IBCGlobal" target="_blank" rel="noopener noreferrer" class="contact-us__link">
-                                <img src="./public/images/contact-us/vk-icon.svg" alt="VKontakte" class="contact-us__item-icon">
-                                <span>IBCGlobal VK</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="contact-us__column">
-                    <h4 class="contact-us__subtitle h6">Веб</h4>
-                    <ul class="contact-us__list">
-                        <li class="contact-us__item">
-                            <a href="https://ibc-global.pro" target="_blank" rel="noopener noreferrer" class="contact-us__link">
-                                <img src="./public/images/contact-us/web-icon.svg" alt="Website" class="contact-us__item-icon">
-                                <span>ibc-global.pro</span>
-                            </a>
-                        </li>
-                        <li class="contact-us__item">
-                            <a href="mailto:WH@IBC-Global.Pro" class="contact-us__link">
-                                <img src="./public/images/contact-us/mail-icon.svg" alt="Email" class="contact-us__item-icon">
-                                <span>WH@IBC-Global.Pro</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="contact-us__column">
-                    <h4 class="contact-us__subtitle h6">Мессенджеры</h4>
-                    <ul class="contact-us__list">
-                        <li class="contact-us__item">
-                            <a href="https://wa.me/78002011555" target="_blank" rel="noopener noreferrer" class="contact-us__link">
-                                <img src="./public/images/contact-us/whats-up-icon.svg" alt="WhatsApp" class="contact-us__item-icon">
-                                <span>WhatsApp</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="contact-us__column">
-                    <h4 class="contact-us__subtitle h6">По телефону</h4>
-                    <ul class="contact-us__list">
-                        <li class="contact-us__item">
-                            <a href="tel:88002011555" class="contact-us__link">8 800 20 11 555</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-                <a href="#" class="contact-us__media-button button button--white">СМИ о нас</a>
-        </section>
-    </footer>
-
-    <dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
-        <form class="mobile-overlay__close-button-wrapper" method="dialog">
-            <button
-                    class="mobile-overlay__close-button cross-button"
-                    type="submit"
-            >
-                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="24px" height="24px"><path fill="currentColor" d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z"/></svg>
-                <span class="visually-hidden">Close navigation menu</span>
-            </button>
-        </form>
-        <div class="mobile-overlay__body">
-            <ul class="mobile-overlay__list">
-                <li class="mobile-overlay__item">
-                    <a class="mobile-overlay__link" href="/">Что такое Light Industrial</a>
-                </li>
-                <li class="mobile-overlay__item">
-                    <a class="mobile-overlay__link" href="/">Инвесторам</a>
-                </li>
-                <li class="mobile-overlay__item">
-                    <a class="mobile-overlay__link" href="/">Наши объекты</a>
-                </li>
-                <li class="mobile-overlay__item">
-                    <a class="mobile-overlay__link" href="/">Оставить заявку</a>
-                </li>
-                <li class="mobile-overlay__item">
-                    <a class="mobile-overlay__link" href="/">8 800 20 11 555</a>
+                        </div>
+                    </article>
                 </li>
             </ul>
+            <div class="contacts__channel channel">
+                <div class="channel__body">
+                    <h3 class="channel__title">
+                        Актуально Ежедневно Про склады
+                    </h3>
+                    <button class="channel__button button button--white">
+                        Телеграм-канал
+                    </button>
+                </div>
+            </div>
         </div>
-    </dialog>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const swiper = new Swiper('.swiper', {
-                // Опции Swiper
-                loop: true, // Бесконечный слайдер
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                },
-                // Другие опции по желанию:
-                // autoplay: {
-                //     delay: 3000,
-                // },
-                // effect: 'fade',
-                // speed: 1000,
-            });
-        });
-    </script>
-    <script type="module" src="./src/js/main.js"></script>
+    </section>
+</main>
+<footer class="footer">
+    <section class="footer__consultation consultation">
+        <div class="consultation__left">
+            <header class="consultation__header">
+                <img src="./public/icons/consultation/email-icon_big.svg" alt="" class="consultation__icon">
+                <h2 class="consultation__title">
+                    Получить консультацию
+                </h2>
+            </header>
+        </div>
+        <form id="consultation-form" class="consultation__form form" action="#" method="post">
+            <div class="form__body">
+                <div class="form__field field">
+                    <label class="field__label" for="name">Ваше имя</label>
+                    <input class="field__input" type="text" id="name" name="name" placeholder="John Doe" required />
+                </div>
+
+                <div class="form__field field">
+                    <label class="field__label" for="company">Компания</label>
+                    <input class="field__input" type="text" id="company" name="company" placeholder="XXXX" />
+                </div>
+
+                <div class="form__field field">
+                    <label class="field__label" for="email">Эл. почта</label>
+                    <input class="field__input" type="email" id="email" name="email" placeholder="john@mail.ru" required />
+                </div>
+
+                <div class="form__field field">
+                    <label class="field__label" for="phone">Телефон</label>
+                    <input class="field__input" type="tel" id="phone" name="phone" placeholder="+7 (926) ___ __ __" required />
+                </div>
+
+                <div class="form__field field">
+                    <label class="field__label" for="city">Город</label>
+                    <select class="field__input field__select" id="city" name="city" required>
+                        <option value="" disabled selected>Выберите город</option>
+                        <option value="moscow">Москва</option>
+                        <option value="spb">Санкт-Петербург</option>
+                        <option value="other">Другой</option>
+                    </select>
+                </div>
+
+                <div class="form__field field">
+                    <label class="field__label" for="status">Статус</label>
+                    <select class="field__input field__select" id="status" name="status" required>
+                        <option value="" disabled selected>Выберите статус</option>
+                        <option value="investor">Инвестор</option>
+                        <option value="company">Компания</option>
+                        <option value="other">Другое</option>
+                    </select>
+                </div>
+
+                <button class="form__submit button button--white" type="submit">Отправить запрос</button>
+            </div>
+        </form>
+    </section>
+    <section class="footer__contacts contact-us contact-us__container">
+        <h3 class="contact-us__title">Связаться с нами</h3>
+        <div class="contact-us__grid">
+            <div class="contact-us__column">
+                <h4 class="contact-us__subtitle h6">Социальные сети</h4>
+                <ul class="contact-us__list">
+                    <li class="contact-us__item">
+                        <a href="https://t.me/SkladAsia" target="_blank" rel="noopener noreferrer" class="contact-us__link">
+                            <img src="./public/images/contact-us/telegram-icon.svg" alt="Telegram" class="contact-us__item-icon">
+                            <span>SkladAsia</span>
+                        </a>
+                    </li>
+                    <li class="contact-us__item">
+                        <a href="https://youtube.com/IBCGlobal.Warehouse" target="_blank" rel="noopener noreferrer" class="contact-us__link">
+                            <img src="./public/images/contact-us/youtube-icon.svg" alt="YouTube" class="contact-us__item-icon">
+                            <span>IBCGlobal.Warehouse</span>
+                        </a>
+                    </li>
+                    <li class="contact-us__item">
+                        <a href="https://vk.com/IBCGlobal" target="_blank" rel="noopener noreferrer" class="contact-us__link">
+                            <img src="./public/images/contact-us/vk-icon.svg" alt="VKontakte" class="contact-us__item-icon">
+                            <span>IBCGlobal VK</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="contact-us__column">
+                <h4 class="contact-us__subtitle h6">Веб</h4>
+                <ul class="contact-us__list">
+                    <li class="contact-us__item">
+                        <a href="https://ibc-global.pro" target="_blank" rel="noopener noreferrer" class="contact-us__link">
+                            <img src="./public/images/contact-us/web-icon.svg" alt="Website" class="contact-us__item-icon">
+                            <span>ibc-global.pro</span>
+                        </a>
+                    </li>
+                    <li class="contact-us__item">
+                        <a href="mailto:WH@IBC-Global.Pro" class="contact-us__link">
+                            <img src="./public/images/contact-us/mail-icon.svg" alt="Email" class="contact-us__item-icon">
+                            <span>WH@IBC-Global.Pro</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="contact-us__column">
+                <h4 class="contact-us__subtitle h6">Мессенджеры</h4>
+                <ul class="contact-us__list">
+                    <li class="contact-us__item">
+                        <a href="https://wa.me/78002011555" target="_blank" rel="noopener noreferrer" class="contact-us__link">
+                            <img src="./public/images/contact-us/whats-up-icon.svg" alt="WhatsApp" class="contact-us__item-icon">
+                            <span>WhatsApp</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="contact-us__column">
+                <h4 class="contact-us__subtitle h6">По телефону</h4>
+                <ul class="contact-us__list">
+                    <li class="contact-us__item">
+                        <a href="tel:88002011555" class="contact-us__link">8 800 20 11 555</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <a href="#" class="contact-us__media-button button button--white">СМИ о нас</a>
+    </section>
+</footer>
+
+<dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
+    <form class="mobile-overlay__close-button-wrapper" method="dialog">
+        <button
+                class="mobile-overlay__close-button cross-button"
+                type="submit"
+        >
+            <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="24px" height="24px"><path fill="currentColor" d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z"/></svg>
+            <span class="visually-hidden">Close navigation menu</span>
+        </button>
+    </form>
+    <div class="mobile-overlay__body">
+        <ul class="mobile-overlay__list">
+            <li class="mobile-overlay__item">
+                <a class="mobile-overlay__link" href="/">Что такое Light Industrial</a>
+            </li>
+            <li class="mobile-overlay__item">
+                <a class="mobile-overlay__link" href="/">Инвесторам</a>
+            </li>
+            <li class="mobile-overlay__item">
+                <a class="mobile-overlay__link" href="/">Наши объекты</a>
+            </li>
+            <li class="mobile-overlay__item">
+                <a class="mobile-overlay__link" href="/">Оставить заявку</a>
+            </li>
+            <li class="mobile-overlay__item">
+                <a class="mobile-overlay__link" href="/">8 800 20 11 555</a>
+            </li>
+        </ul>
+    </div>
+</dialog>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.main-swiper', {
+        loop: true,
+        navigation: {
+            nextEl: '[data-js-next]',
+            prevEl: '[data-js-prev]',
+        },
+        on: {
+            init(swiper) {
+                updateHeroContent(swiper);
+            },
+            slideChange(swiper) {
+                updateHeroContent(swiper);
+            }
+        }
+    });
+
+    function updateHeroContent(swiper) {
+        const slide = swiper.slides[swiper.activeIndex];
+        const title = slide.dataset.title;
+        const desc = slide.dataset.desc;
+
+        document.querySelector('[data-js-hero-title]').textContent = title || '';
+        document.querySelector('[data-js-hero-description]').innerHTML = desc || '';
+    }
+
+    const objectsSwiper = new Swiper('.our-objects-swiper', {
+        loop: true,
+        pagination: {
+            el: '[data-js-pagination]',
+            clickable: true,
+            bulletClass: 'pagination__button',
+            bulletActiveClass: 'is-current',
+            renderBullet(index, className) {
+                return `
+                <button class="${className}" type="button">
+                    <span class="visually-hidden">Слайд ${index + 1}</span>
+                </button>`;
+            }
+        }
+    });
+
+</script>
+<script type="module" src="./src/js/main.js"></script>
 </body>
 </html>
