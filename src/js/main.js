@@ -19,4 +19,43 @@ mobileOverlay.addEventListener('click', (event) => {
     }
 });
 
+const swiper = new Swiper('.main-swiper', {
+    loop: true,
+    navigation: {
+        nextEl: '[data-js-next]',
+        prevEl: '[data-js-prev]',
+    },
+    on: {
+        init(swiper) {
+            updateHeroContent(swiper);
+        },
+        slideChange(swiper) {
+            updateHeroContent(swiper);
+        }
+    }
+});
 
+function updateHeroContent(swiper) {
+    const slide = swiper.slides[swiper.activeIndex];
+    const title = slide.dataset.title;
+    const desc = slide.dataset.desc;
+
+    document.querySelector('[data-js-hero-title]').textContent = title || '';
+    document.querySelector('[data-js-hero-description]').innerHTML = desc || '';
+}
+
+const objectsSwiper = new Swiper('.our-objects-swiper', {
+    loop: true,
+    pagination: {
+        el: '[data-js-pagination]',
+        clickable: true,
+        bulletClass: 'pagination__button',
+        bulletActiveClass: 'is-current',
+        renderBullet(index, className) {
+            return `
+                <button class="${className}" type="button">
+                    <span class="visually-hidden">Слайд ${index + 1}</span>
+                </button>`;
+        }
+    }
+});
