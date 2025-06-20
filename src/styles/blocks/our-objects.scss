@@ -1,7 +1,11 @@
 @use "../functions" as fn;
 
 .our-objects {
-  overflow-x: hidden;
+  overflow: hidden;
+
+  .swiper-slide:not(.swiper-slide-active) img {
+    filter: grayscale(100%);
+  }
 
   &__title {
     display: flex;
@@ -20,8 +24,11 @@
 
     &-list {
       display: flex;
-      gap: fn.bs(30);
     }
+  }
+
+  .swiper-slide {
+    width: 80%;
   }
 
   &__slide {

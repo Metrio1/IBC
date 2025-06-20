@@ -1,21 +1,31 @@
 import.meta.glob("../styles/**/*.scss", { eager: true });
 
 const mobileOverlay = document.getElementById('mobileOverlay');
+const closeForm = mobileOverlay.querySelector('form');
 
-mobileOverlay.addEventListener('click', (e) => {
-    const rect = mobileOverlay.getBoundingClientRect();
-    const isClickOutside =
-        e.clientX < rect.left || e.clientX > rect.right ||
-        e.clientY < rect.top || e.clientY > rect.bottom;
-
-    if (isClickOutside) {
-        mobileOverlay.close();
-    }
+closeForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    closeSidebar();
 });
 
-mobileOverlay.addEventListener('click', (event) => {
-    if (event.target === mobileOverlay) {
-        mobileOverlay.close();
+document.querySelector('.header__burger-button')?.addEventListener('click', () => {
+    mobileOverlay.hidden = false;
+    requestAnimationFrame(() => {
+        mobileOverlay.classList.add('mobile-overlay--visible');
+        mobileOverlay.querySelector('.mobile-overlay__sidebar')
+            .classList.add('mobile-overlay__sidebar--visible');
+    });
+});
+
+function closeSidebar() {
+    const sidebar = mobileOverlay.querySelector('.mobile-overlay__sidebar');
+    sidebar.classList.remove('mobile-overlay__sidebar--visible');
+    mobileOverlay.classList.remove('mobile-overlay--visible');
+}
+
+mobileOverlay.addEventListener('click', (e) => {
+    if (e.target === mobileOverlay) {
+        closeSidebar();
     }
 });
 
@@ -46,11 +56,13 @@ function updateHeroContent(swiper) {
 
 const objectsSwiper = new Swiper('.our-objects-swiper', {
     loop: true,
+    spaceBetween: 30,
     pagination: {
         el: '[data-js-pagination]',
         clickable: true,
         bulletClass: 'pagination__button',
         bulletActiveClass: 'is-current',
+
         renderBullet(index, className) {
             return `
                 <button class="${className}" type="button">
